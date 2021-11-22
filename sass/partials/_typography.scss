@@ -1,0 +1,77 @@
+body {
+  font-family: $font-primary;
+}
+
+h1 {
+  font-weight: 200 !important;
+  text-transform: uppercase !important;
+  word-spacing: 6px;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-size: 21px;
+}
+
+h3 {
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  word-spacing: 1.5px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+h4 {
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  word-spacing: 1.5px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+h5 {
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  word-spacing: 1.5px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+p,
+.card-text {
+  font-weight: 300 !important;
+  font-size: 13px;
+}
+
+.btn {
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  font-size: 15px;
+}
+
+a {
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+  text-decoration: underline;
+  font-size: 13px !important;
+}
+
+small {
+  font-weight: 300 !important;
+  font-size: 1px !important;
+}
+
+.text-small {
+  font-size: 13px !important;
+}
+
+.footer {
+  a {
+    font-size: 13px !important;
+  }
+}
