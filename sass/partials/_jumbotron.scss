@@ -7,3 +7,14 @@
   background-size: cover;
   height: 500px;
 }
+
+.hero span {
+  border-right: 0.06em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
