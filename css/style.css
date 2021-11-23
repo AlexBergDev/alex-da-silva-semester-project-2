@@ -10751,6 +10751,24 @@ fieldset:disabled .btn {
   height: 500px;
 }
 
+.hero span {
+  border-right: 0.06em solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -10816,15 +10834,11 @@ a {
 
 small, .small {
   font-weight: 300 !important;
-  font-size: 1px !important;
-}
-
-.text-small {
-  font-size: 13px !important;
+  font-size: 12px !important;
 }
 
 .footer a {
-  font-size: 13px !important;
+  font-size: 11px !important;
 }
 
 .btn {
@@ -10868,11 +10882,25 @@ footer {
 
 .footer__icons i {
   font-size: 20px;
-  height: 30px;
-  width: 30px;
-  padding: 5px;
+  height: 36px;
+  width: 36px;
+  padding: 8px;
   margin-right: 5px;
   margin-bottom: 5px;
+  border-radius: 50px;
   background-color: #cecece;
+}
+
+.footer__icons i:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 1px sold black;
 }
 /*# sourceMappingURL=style.css.map */
