@@ -15,10 +15,11 @@ h2 {
   text-transform: uppercase !important;
   word-spacing: 3px;
   letter-spacing: 1px;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 h3 {
+  font-family: "Roboto Mono", monospace;
   font-weight: 500 !important;
   text-transform: uppercase !important;
   word-spacing: 1.5px;
@@ -57,17 +58,20 @@ p,
 a {
   font-weight: 300 !important;
   text-transform: uppercase !important;
-  text-decoration: underline;
+  text-decoration: none;
+  font-size: 13px !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input {
+  font-weight: 200 !important;
   font-size: 13px !important;
 }
 
 small {
   font-weight: 300 !important;
   font-size: 12px !important;
-}
-
-.footer {
-  a {
-    font-size: 11px !important;
-  }
 }
