@@ -6,10 +6,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
+
+  @media (max-width: 1000px) {
+    height: 400px;
+  }
 }
 
 .hero {
   margin-top: 120px;
+
+  @media (max-width: 1000px) {
+    margin-top: 80px;
+  }
 }
 
 .hero span {
