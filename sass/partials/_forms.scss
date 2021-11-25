@@ -1,4 +1,7 @@
 .form-control {
   border-radius: 0;
-  border: 1px sold black;
+  background-color: $white;
+  padding: 8px;
+  border: 0;
+  border-bottom: 1px solid $black;
 }
