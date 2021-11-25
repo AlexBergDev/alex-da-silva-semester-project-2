@@ -10778,8 +10778,20 @@ body {
   height: 600px;
 }
 
+@media (max-width: 1000px) {
+  .jumbotron {
+    height: 400px;
+  }
+}
+
 .hero {
   margin-top: 120px;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    margin-top: 80px;
+  }
 }
 
 .hero span {
@@ -10896,6 +10908,9 @@ small, .small {
 
 .card img {
   border-radius: 0;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-body {
