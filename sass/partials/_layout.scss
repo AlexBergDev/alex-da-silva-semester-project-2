@@ -1,0 +1,24 @@
+body {
+  background-color: $white;
+}
+
+.cta__container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+
+  @media (min-width: 1000px) {
+    height: 600px;
+  }
+}
+
+.cta__container--left {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("../../images/left.jpg");
+}
+
+.cta__container--right {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("../../images/right.jpg");
+}
