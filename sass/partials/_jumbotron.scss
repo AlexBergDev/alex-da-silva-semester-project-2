@@ -1,11 +1,15 @@
 .jumbotron {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
     url("../../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 600px;
+}
+
+.hero {
+  margin-top: 120px;
 }
 
 .hero span {
