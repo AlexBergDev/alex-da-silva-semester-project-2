@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Arctic Fashion | Home</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
     </head>
@@ -14,40 +14,64 @@
 
         <header>
 
-            <nav class="navbar navbar-light bg-white">
+            <nav class="navbar navbar-light bg-dark p-0 sticky-top">
                 <div class="container-fluid">
 
-                <button class="navbar-toggler p-0 rounded-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span><img src="images/ui/hamburger.svg"></img></span>
+                <button class="navbar-toggler p-0 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><img src="images/ui/hamburger-light.svg"></img></span>
                 </button>
 
                 <a class="navbar-brand" href="#">
-                    <img src="images/brand/logo.svg" alt="Arctic Fashion Logo">
+                    <img src="images/brand/logo-light.svg" alt="Arctic Fashion Logo">
                 </a>
 
                 <div class="navigation__icons">
-                    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" href="#"><i><img src="images/ui/search.svg" alt="Search icon"></i></a>
-                    <a href="wishlist.html"><i><img src="images/ui/heart.svg" alt="Wishlist icon"></i></a>
-                    <a href="cart.html"><i><img src="images/ui/cart.svg" alt="Cart icon"></i></a>
+                    <a class="mx-1 mx-md-2" href="wishlist.html"><i><img src="images/ui/heart-light.svg" alt="Wishlist icon"></i></a>
+                    <a class="mx-1 mx-md-2" href="cart.html"><i><img src="images/ui/cart-light.svg" alt="Cart icon"></i></a>
                 </div>
                 
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                      <h4 class="text-uppercase">Menu</h4>
+                      <h4 class="text-uppercase mt-3">Search</h4>
                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
+                      
                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <form class="d-flex mb-4">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
+                        </form>
+
+                        <h4 class="text-uppercase my-4 mt-md-5">Navigation</h4>
+
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <a class="nav-link my-2 active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
+                          <a class="nav-link my-2" href="#">Wishlist</a>
                         </li>
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-dark" type="submit">Search</button>
-                      </form>
+
+                        <h4 class="text-uppercase my-4 mt-md-5">Categories</h4>
+
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Black friday deals</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Jackets</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">T-shirts</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Jeans</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Shoes</a>
+                        </li>
+
+                      </ul>
                     </div>
                   </div>
 
@@ -58,18 +82,42 @@
 
         <main>
 
-            <div class="jumbotron jumbotron-fluid position-relative overflow-hidden p-3 p-md-5">
+            <section class="jumbotron jumbotron-fluid position-relative overflow-hidden p-3 p-md-5">
+              <div class="hero">
                 <div class="col-md-5 p-3 p-lg-5 mx-auto my-5" style="background-color: rgba(0, 0, 0, 0.3);">
-                    <div class="hero">
-                      <h1 class="text-uppercase">Most elegant clothing</h1>
-                      <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                      <a class="btn btn-outline-light" href="#" role="button">Check it out</a>
-                    </div>
+                    <h1 class="text-uppercase">Most elegant clothing</h1>
+                    <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    <a class="btn btn-outline-light" href="#" role="button">Check it out</a>
                 </div>
-            </div>
+              </div>
+            </section>
 
-            <div class="container">
-                <h2 class="mt-5 mb-4">Featured products</h2>
+            <section class="container-fluid">
+
+              <div class="row row-cols-1 row-cols-sm-2 mb-5 text-center justify-content-center align-self-center align-items-center">
+
+                <div class="card bg-dark text-white cta__container cta__container--left">
+                  <div class="card-img-overlay">
+                    <p class="h1">Lorem Ipsum</p>
+                    <a class="text-white" href="#"">Go to collection</a>
+                  </div>
+                </div>
+
+                <div class="card bg-dark text-white cta__container cta__container--right">
+                  <div class="card-img-overlay">
+                    <p class="h1">Lorem Ipsum</p>
+                    <a class="text-white" href="#"">Go to collection</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="container">
+                <h2 class="mt-4 mt-md-5 mb-3">Featured products</h2>
+
+                <hr class="mb-4" />
 
                 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4 mb-5">
                     <div class="col">
@@ -78,7 +126,7 @@
                         <div class="card-body p-0">
                             <i class="card-icon float-end"><img src="images/ui/heart.svg" alt="Wishlist icon"></i>
                             <h3 class="card-title m-0">Living Room Furniture</h3>
-                            <div class="card-text">399 kr</div>
+                            <div class="card-text h3">399 kr</div>
                             <a href="#" class="stretched-link"></a>
                         </div>
                       </div>
@@ -89,7 +137,7 @@
                           <div class="card-body p-0">
                             <i class="card-icon float-end"><img src="images/ui/heart.svg" alt="Wishlist icon"></i>
                             <h3 class="card-title m-0">Black and white</h3>
-                            <div class="card-text">399 kr</div>
+                            <div class="card-text h3">399 kr</div>
                             <a href="#" class="stretched-link"></a>
                           </div>
                         </div>
@@ -100,7 +148,7 @@
                           <div class="card-body p-0">
                             <i class="card-icon float-end"><img src="images/ui/heart.svg" alt="Wishlist icon"></i>
                             <h3 class="card-title m-0">Card title</h3>
-                            <div class="card-text">399 kr</div>
+                            <div class="card-text h3">399 kr</div>
                             <a href="#" class="stretched-link"></a>
                           </div>
                         </div>
@@ -111,7 +159,7 @@
                           <div class="card-body p-0">
                             <i class="card-icon float-end"><img src="images/ui/heart.svg" alt="Wishlist icon"></i>
                             <h3 class="card-title m-0">Card title</h3>
-                            <div class="card-text">399 kr</div>
+                            <div class="card-text h3">399 kr</div>
                             <a href="#" class="stretched-link"></a>
                           </div>
                         </div>
@@ -122,7 +170,7 @@
                           <div class="card-body p-0">
                             <i class="card-icon float-end"><img src="images/ui/heart.svg" alt="Wishlist icon"></i>
                             <h3 class="card-title m-0">Card title</h3>
-                            <div class="card-text">399 kr</div>
+                            <div class="card-text h3">399 kr</div>
                             <a href="#" class="stretched-link"></a>
                           </div>
                         </div>
@@ -133,67 +181,72 @@
                           <div class="card-body p-0">
                             <i class="card-icon float-end"><img src="images/ui/heart.svg" alt="Wishlist icon"></i>
                             <h3 class="card-title m-0">Card title</h3>
-                            <div class="card-text">399 kr</div>
+                            <div class="card-text h3">399 kr</div>
                             <a href="#" class="stretched-link"></a>
                           </div>
                         </div>
                       </div>
                   </div>
-
-            </div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 text-white bg-dark py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
-                        <p class="h1">Lorem Ipsum</p>
-                        <a class="text-white" href="#"">Go to collection</a>
-                    </div>
-                    <div class="col-md-6 text-white bg-dark py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
-                        <p class="h1">Lorem Ipsum</p>
-                        <a class="text-white" href="#"">Go to collection</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container mb-5">
-                <h2 class="mt-5 mb-4">Newsletter</h2>
-                <form class="d-flex mb-2">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-dark" type="submit">Subscribe</button>
-                </form>
-                <p>Subscribe for free. We won't share your email address to third parties.</p>
-            </div>
+              </section>
 
         </main>
 
         <footer>
             <div class="container py-5 px-4">
+
+              <hr/>
+
+                <form class="my-3 mt-5">
+                  <div class="row d-flex justify-content-md-center">
+                    <div class="col-auto">
+                      <h5 class="py-2 pt-0 pt-md-3">Sign up for our newsletter</h5>
+                    </div>
+                    <div class="col-md-5 col-12">
+                      <div class="form-outline form-dark">
+                        <input type="email" id="form5Example21" placeholder="Email address.." class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-auto my-3 my-sm-0">
+                      <button type="submit" class="btn btn-dark">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <hr class="d-block d-sm-none" />
+
                 <div class="row my-4">
                 
-                <div class="col-6 col-md-3 order-sm-1">
+                <div class="col-6 col-md-3 order-sm-1 my-3">
                     <h5>Features</h5>
-                    <ul class="list-unstyled">
-                    <li><a class="text-muted" href="404.html">Cool stuff</a></li>
-                    <li><a class="text-muted" href="404.html">Random feature</a></li>
-                    <li><a class="text-muted" href="404.html">Team feature</a></li>
-                    <li><a class="text-muted" href="404.html">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="404.html">Another one</a></li>
-                    <li><a class="text-muted" href="404.html">Last time</a></li>
+                    <ul class="list-unstyled mt-4">
+                    <li class="my-2"><a class="text-dark" href="404.html">Cool stuff</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Random feature</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Team feature</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Stuff for developers</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Another one</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Last time</a></li>
                     </ul>
                 </div>
 
-                <div class="col-6 col-md-3 order-sm-2">
+                <hr class="d-block d-sm-none" />
+
+                <div class="col-6 col-md-3 order-sm-2 my-3">
                     <h5>Resources</h5>
-                    <ul class="list-unstyled">
-                    <li><a class="text-muted" href="404.html">Resource</a></li>
-                    <li><a class="text-muted" href="404.html">Resource name</a></li>
-                    <li><a class="text-muted" href="404.html">Another resource</a></li>
-                    <li><a class="text-muted" href="404.html">Final resource</a></li>
+                    <ul class="list-unstyled mt-4">
+                    <li class="my-2"><a class="text-dark" href="404.html">Resource</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Resource name</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Another resource</a></li>
+                    <li class="my-2"><a class="text-dark" href="404.html">Final resource</a></li>
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 order-sm-0">
-                  <div class="footer__icons col-6 mb-2">
+                <hr class="d-block d-sm-none" />
+
+                <div class="col-12 col-md-6 order-sm-0 mt-3">
+                  <h5>Social media</h5>
+                  <div class="footer__icons col-12 col-md-6 mb-3 pt-1 mt-4">
                       <i class="fab fa-facebook"></i>
                       <i class="fab fa-twitter"></i>
                       <i class="fab fa-instagram"></i>
@@ -202,16 +255,16 @@
                       <i class="fab fa-linkedin-in"></i>
                   </div>
                   
-                  <div class="col-6 d-grid gap-2 mb-2">
-                    <a class="btn btn-dark" href="admin/dashboard.html">Admin</a>
+                  <div class="col-6">
+                    <a class="btn btn-outline-dark" href="admin/dashboard.html">Admin</a>
                   </div>
 
                 </div>
     
                 </div>
             </div>
-            <div class="text-center p-3 bg-white">
-              <p class="p-0 m-0">© 2022 Copyright Arctic Fashion</p>
+            <div class="copyright__container text-center p-3 text-white">
+              <p class="p-0 m-0 pb-2 pb-md-0">© 2022 Copyright Arctic Fashion</p>
             </div>
         </footer>
 
