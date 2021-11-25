@@ -1,5 +1,5 @@
 footer {
-  background-color: $grey-first;
+  background-color: $white;
 }
 
 .footer__icons {
@@ -10,14 +10,15 @@ footer {
     padding: 8px;
     margin-right: 5px;
     margin-bottom: 5px;
-    border-radius: 50px;
-    background-color: $grey-second;
   }
 
   & i:hover {
-    background-color: black;
-    color: white;
+    color: $grey-second;
     transition: 0.3s;
     cursor: pointer;
   }
+}
+
+.copyright__container {
+  background-color: black;
 }
