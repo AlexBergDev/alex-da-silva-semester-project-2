@@ -5951,7 +5951,7 @@ fieldset:disabled .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 70%;
+  max-width: 85%;
   visibility: hidden;
   background-color: #fff;
   background-clip: padding-box;
