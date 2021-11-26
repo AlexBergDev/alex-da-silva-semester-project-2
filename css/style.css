@@ -10836,8 +10836,8 @@ h3, .h3 {
   font-family: "Roboto Mono", monospace;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  word-spacing: 1.5px;
-  letter-spacing: 1px;
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
   font-size: 14px;
 }
 
