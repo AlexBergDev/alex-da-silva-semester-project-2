@@ -2,6 +2,12 @@ footer {
   background-color: $white;
 }
 
+.footer--bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer__icons {
   & i {
     font-size: 20px;
