@@ -14,14 +14,14 @@
 
         <header>
 
-            <nav class="navbar navbar-light fixed-top bg-dark p-0">
+            <nav class="navbar navbar-light bg-dark fixed-top p-0">
                 <div class="container-fluid">
 
                 <button class="navbar-toggler p-0 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span><img src="images/ui/hamburger-light.svg"></img></span>
                 </button>
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/brand/logo-light.svg" alt="Arctic Fashion Logo">
                 </a>
 
@@ -32,32 +32,25 @@
                 
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                      <h4 class="text-uppercase mt-3">Search</h4>
+                      <a class="btn btn-outline-dark" href="admin/login.html">Login</a>
                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                       
                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
+                        <h4 class="text-uppercase my-4">Search</h4>
+
                         <form class="d-flex mb-4">
                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                           <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
                         </form>
 
-                        <h4 class="text-uppercase my-4 mt-md-5">Navigation</h4>
-
-                        <li class="nav-item">
-                          <a class="nav-link my-2 active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="wishlist.html">Wishlist</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="cart.html">Cart</a>
-                        </li>
-
                         <h4 class="text-uppercase my-4 mt-md-5">Collections</h4>
 
+                        <li class="nav-item">
+                            <a class="nav-link my-2" href="#">All items</a>
+                          </li>
                         <li class="nav-item">
                           <a class="nav-link my-2" href="#">Black friday deals</a>
                         </li>
@@ -85,20 +78,58 @@
 
         <main>
 
-            <div class="container-fluid p-md-4">
+            <div class="container-fluid p-md-4 p-4">
 
-                <h2 class="mt-4 mt-md-5 mb-3 pt-5">Collections</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-5 pt-3 h4">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Collections</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">All items</li>
+                    </ol>
+                  </nav>
+
+                <h2 class="mt-5 mb-3">All items</h2>
 
                 <hr class="mb-4" />
 
                 <div class="row">
 
                     <div class="col-12 col-md-2">
+
+                        <div class="row g-3">
+                            <div class="col">
+                                <select class="form-select h4" aria-label="Default select example">
+                                    <option selected>Sort</option>
+                                    <option value="1">Newest</option>
+                                    <option value="2">Cheapest</option>
+                                    <option value="3">Most expensive</option>
+                                    <option value="4">Most popular</option>
+                                  </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-select h4" aria-label="Default select example">
+                                    <option selected>Color</option>
+                                    <option value="1">Blue</option>
+                                    <option value="2">Red</option>
+                                    <option value="3">Gold</option>
+                                    <option value="4">White</option>
+                                    <option value="5">Black</option>
+                                  </select>
+                            </div>
+                            <div class="col-12 form-check h4">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Featured
+                                </label>
+                              </div>
+                          </div>
+
                     </div>
 
                     <div class="col-12 col-md-10">
+                        <hr class="my-4 d-block d-sm-none" />
 
-                          <form class="d-flex mb-4">
+                          <form class="d-flex mb-4 mt-3 mt-sm-0">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
                           </form>
@@ -110,20 +141,11 @@
 
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
-                        <h4 class="text-uppercase my-4 mt-md-5">Navigation</h4>
-
-                        <li class="nav-item">
-                          <a class="nav-link my-2 active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="wishlist.html">Wishlist</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="cart.html">Cart</a>
-                        </li>
-
                         <h4 class="text-uppercase my-4 mt-md-5">Collections</h4>
 
+                        <li class="nav-item">
+                            <a class="nav-link my-2" href="#">All Items</a>
+                          </li>
                         <li class="nav-item">
                           <a class="nav-link my-2" href="#">Black friday deals</a>
                         </li>
@@ -144,7 +166,7 @@
 
                   </div>
 
-                <div class="col-12 col-md-10 row row-cols-2 row-cols-lg-4 m-0 p-0">
+                <div class="col-12 col-md-10 row row-cols-2 row-cols-lg-4 m-0 p-0 mt-3 mt-sm-0">
 
                     <div class="col">
                         <div class="card">
