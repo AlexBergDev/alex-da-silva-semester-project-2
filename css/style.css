@@ -10764,6 +10764,14 @@ body {
   }
 }
 
+.dashboard__rectangle {
+  background-color: #afafaf;
+}
+
+.dashboard__square {
+  background-color: #efefef;
+}
+
 .cta__container--left {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.4))), url("../../images/left.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../../images/left.jpg");
@@ -10908,21 +10916,14 @@ small, .small {
 }
 
 .quantity__btn {
-  border-radius: 5px 0px 0px 5px;
-  background-color: #f5f5f5;
+  border-radius: 50px;
+  background-color: #111111;
+  color: #f5f5f5;
   padding: 4px;
   border: 1px solid #111111;
   margin: 0px;
   height: 35px;
   width: 35px;
-}
-
-.quantity__btn--minus {
-  border-radius: 5px 0px 0px 5px;
-}
-
-.quantity__btn--plus {
-  border-radius: 0px 5px 5px 0px;
 }
 
 .card {
@@ -11001,14 +11002,12 @@ footer {
 }
 
 .quantity__input {
-  border-radius: 0;
+  border-radius: 5px;
   background-color: #f5f5f5;
-  padding: 4px;
+  padding: 6px;
   width: 35px;
   height: 35px;
   border: 1px solid #111111;
   margin: 0px;
-  margin-left: -5px;
-  margin-right: -5px;
 }
 /*# sourceMappingURL=style.css.map */
