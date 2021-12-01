@@ -10895,7 +10895,8 @@ a:hover {
 }
 
 input,
-textarea {
+textarea,
+label {
   font-weight: 200 !important;
   font-size: 13px !important;
 }
