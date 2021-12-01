@@ -19,6 +19,14 @@ body {
   }
 }
 
+.dashboard__rectangle {
+  background-color: $grey-second;
+}
+
+.dashboard__square {
+  background-color: $grey-first;
+}
+
 .cta__container--left {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
     url("../../images/left.jpg");
