@@ -8,8 +8,9 @@
 }
 
 .quantity__btn {
-  border-radius: 5px 0px 0px 5px;
-  background-color: $white;
+  border-radius: 50px;
+  background-color: $dark;
+  color: $white;
   padding: 4px;
   border: 1px solid $black;
   margin: 0px;
@@ -17,10 +18,10 @@
   width: 35px;
 }
 
-.quantity__btn--minus {
-  border-radius: 5px 0px 0px 5px;
-}
+// .quantity__btn--minus {
+//  border-radius: 5px 0px 0px 5px;
+//}
 
-.quantity__btn--plus {
-  border-radius: 0px 5px 5px 0px;
-}
+//.quantity__btn--plus {
+//  border-radius: 0px 5px 5px 0px;
+//}
