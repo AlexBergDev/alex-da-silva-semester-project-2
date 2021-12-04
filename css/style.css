@@ -10894,6 +10894,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.alert {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500 !important;
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
+  font-size: 13px;
+}
+
 input,
 textarea,
 label {
