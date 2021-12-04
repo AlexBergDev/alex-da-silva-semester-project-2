@@ -10952,8 +10952,9 @@ small, .small {
   margin-top: 5px !important;
 }
 
-.card-icon img {
-  max-width: 20px;
+.card-icon {
+  font-size: 22px;
+  color: #afafaf;
 }
 
 .offcanvas {
