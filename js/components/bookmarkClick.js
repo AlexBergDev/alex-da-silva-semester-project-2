@@ -7,8 +7,8 @@ export default function bookmarkClick() {
 
     const id = this.dataset.id;
     const title = this.dataset.title;
-    const summary = this.dataset.summary;
-    const author = this.dataset.author;
+    const price = this.dataset.price;
+    const image = this.dataset.image;
 
     const currentFavs = getBookmarks();
 
@@ -17,7 +17,7 @@ export default function bookmarkClick() {
     });
 
     if (bookmarkExists === undefined) {
-        const bookmark = { id: id, title: title, summary: summary, author: author};
+        const bookmark = { id: id, title: title, price: price, image: image};
         currentFavs.push(bookmark);
         saveBookmarks(currentFavs);
     } else {
