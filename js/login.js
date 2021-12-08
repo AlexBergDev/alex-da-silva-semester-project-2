@@ -37,7 +37,7 @@ function submitForm(event) {
 }
 
 async function executeLogin(username, password) {
-    const url = baseUrl + "auth/local";
+    const url = baseUrl + "/auth/local";
 
     const data = JSON.stringify({ identifier: username, password: password });
 
