@@ -2,6 +2,7 @@ export const EMPTY_INPUT_VALUE = "Please fill out all the inputs";
 export const ARTICLE_PUBLISHED = "Article published";
 export const EMPTY_PRODUCTS = "No products found";
 export const EMPTY_BOOKMARKS = "No bookmarks yet";
+export const EMPTY_CART = "No items in your cart yet";
 export const SAVED_SUCCESS = "Changes successfully saved";
 export const INVALID_LOGIN_VALUE = "Please enter valid login details";
 export const WRONG_LOGIN_VALUE = "Wrong email address or password";
