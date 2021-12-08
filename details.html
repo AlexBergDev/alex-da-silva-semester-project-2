@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Arctic Fashion | PRODUCT_NAME</title>
+        <title>Arctic Fashion</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
@@ -84,38 +84,54 @@
                     <ol class="breadcrumb mt-5 pt-3 h4">
                       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                       <li class="breadcrumb-item"><a href="collections.html">Collections</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">product_name</li>
+                      <li class="breadcrumb-item active product-container_breadcrumb" aria-current="page"></li>
                     </ol>
                   </nav>
 
-                <h2 class="mt-5 mb-3">product_name</h2>
+                    <h2 class="placeholder-glow mt-5 mb-3">
+                      <span class="placeholder col-4"></span>
+                    </h2>
 
-                <hr class="mb-4" />
+                    <hr class="mb-4" />
 
-                <div class="row">
+                    <div class="row">
 
-                    <div class="col-12 col-md-6 order-md-1">
-                        <img src="images/product.jpg" class="img-fluid" alt="...">
-                    </div>
-
-                    <div class="col-12 col-md-6 order-md-0">
-                        <hr class="d-block d-sm-none" />
-                        <div class="card-icon float-end"><i class="far fa-heart"></i></div>
-                        <h3 class="card-title mt-4 mt-md-0">Details</h3>
-                        <p class="card-text h3">Lorem ipsum lorem ipsum...</p>
-                        <h3 class="card-title">Review</h3>
-                        <p class="card-text h3 mb-4">Lorem ipsum lorem ipsum...</p>
-                        <div class="card-icon"><i class="far fa-heart"></i></div>
-                        <div class="quantity mt-4">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="quantity__btn quantity__btn--minus shadow">-</button>
-                            <input class="quantity__input" min="1" name="quantity" value="1" type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="quantity__btn quantity__btn--plus shadow">+</button>
+                        <div class="product-container_image col-12 col-md-6 order-md-1">
+                          <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
+                            <div class="spinner-border" role="status">
+                              <span class="visually-hidden">Loading...</span>
+                            </div>
+                          </div>
                         </div>
-                        <p class="h3 my-4">1999 kr</p>
-                        <button type="submit" class="btn btn-dark shadow">Add to cart</button>
-                    </div>
 
-                </div>
+                        <div class="product-container col-12 col-md-6 order-md-0">
+                            <hr class="d-block d-sm-none" />
+                            <h3 class="card-title mt-4 mt-md-0">Description</h3>
+                            <p class="placeholder-glow product-container_description card-text h3">
+                              <span class="placeholder col-6"></span>
+                              <span class="placeholder col-8"></span>
+                              <span class="placeholder col-4"></span>
+                              <span class="placeholder col-6"></span>
+                              <span class="placeholder col-8"></span>
+                            </p>
+  
+                            <div class="card-icon"><i class="far fa-heart"></i></div>
+
+                            <div class="quantity mt-4">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="quantity__btn quantity__btn--minus shadow">-</button>
+                                <input class="quantity__input" min="1" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="quantity__btn quantity__btn--plus shadow">+</button>
+                            </div>
+
+                            <p class="product-container_price placeholder-glow h3 my-4">
+                              <span class="placeholder col-2"></span>
+                            </p>
+
+                            <button type="submit" class="btn btn-dark shadow">Add to cart</button>
+
+                        </div>
+
+                    </div>
                 
             </section>
 
@@ -198,7 +214,7 @@
             </div>
         </footer>
 
-        <script src="js/script.js" type="module"></script>
+        <script src="js/details.js" type="module"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
