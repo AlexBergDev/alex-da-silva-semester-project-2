@@ -10948,6 +10948,18 @@ small, .small {
      object-fit: cover;
 }
 
+@media (max-width: 1000px) {
+  .card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card img {
+    height: 160px;
+  }
+}
+
 .card-body {
   margin-top: 5px !important;
 }
@@ -10955,6 +10967,23 @@ small, .small {
 .card-icon {
   font-size: 22px;
   color: #afafaf;
+}
+
+.products__placeholder {
+  background-color: #afafaf;
+  height: 250px;
+}
+
+@media (max-width: 1000px) {
+  .products__placeholder {
+    height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .products__placeholder {
+    height: 160px;
+  }
 }
 
 .offcanvas {
