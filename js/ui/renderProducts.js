@@ -1,4 +1,5 @@
-import { EMPTY_ARTICLES } from "../constants/messages.js"
+import { EMPTY_PRODUCTS } from "../constants/messages.js"
+import { baseUrl } from "../settings/api.js";
 import displayMessage from "../components/displayMessage.js";
 import bookmarkClick from "../components/bookmarkClick.js";
 import { getBookmarks } from "../utils/storage.js";
@@ -10,7 +11,7 @@ export default function renderProducts(json, container) {
     container.innerHTML = "";
 
     if (json.length === 0) {
-        displayMessage("alert-info", EMPTY_ARTICLES, ".collections-container");
+        displayMessage("alert-info", EMPTY_PRODUCTS, ".products-container");
     }
         
     json.forEach(function (product) {
@@ -28,12 +29,13 @@ export default function renderProducts(json, container) {
 
         container.innerHTML += `<div class="col">
                                     <div class="card">
-                                        <img src="${"http://localhost:1337" + product.image.url}" class="card-img-top" alt="${product.title}">
+                                    <a href="details.html?id=${product.id}"><img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.title}"></a>
                                         <div class="card-body p-0">
-                                            <div class="card-icon float-end"><i class="${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${product.image}"></i></div>
-                                            <h3 class="card-title m-0">${product.title}</h3>
-                                            <div class="card-text h3">${product.price}</div>
-                                            <a href="details.html?id=${product.id}" class="stretched-link"></a>
+                                            <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>
+                                            <a href="details.html?id=${product.id}">
+                                                <h3 class="m-0">${product.title}</h3>
+                                                <div class="card-text h3">${product.price} kr</div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>`;
