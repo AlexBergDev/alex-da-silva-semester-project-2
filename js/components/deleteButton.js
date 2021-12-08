@@ -14,7 +14,7 @@ export default function deleteButton(id) {
         const doDelete = confirm(DELETE_CONFIRM);
 
         if (doDelete) {
-            const url = baseUrl + "articles/" + id;
+            const url = baseUrl + "/articles/" + id;
 
             const token = getToken();
 
