@@ -54,3 +54,17 @@ export function getBookmarks() {
 export function saveBookmarks(favs) {
     localStorage.setItem("bookmarks", JSON.stringify(favs));
 }
+
+export function getCart() {
+    const cartItems = localStorage.getItem("cart");
+
+    if (cartItems === null) {
+        return [];
+    } else {
+        return JSON.parse(cartItems);
+    }
+}
+
+export function saveCart(cartItems) {
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+}
