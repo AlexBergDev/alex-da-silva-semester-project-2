@@ -4,12 +4,12 @@ import navigation from "./components/navigation.js";
 import renderProducts from "./ui/renderProducts.js";
 import searchTitle from "./ui/searchTitle.js";
 
-const url = baseUrl + "products";
+const url = baseUrl + "/products";
 
 // navigation();
 
 (async function () {
-    const container = document.querySelector(".collections-container")
+    const container = document.querySelector(".products-container")
 
     try {
         const response = await fetch(url);
