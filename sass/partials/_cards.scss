@@ -6,6 +6,14 @@
     border-radius: 0;
     height: 250px;
     object-fit: cover;
+
+    @media (max-width: 1000px) {
+      height: 200px;
+    }
+
+    @media (max-width: 800px) {
+      height: 160px;
+    }
   }
 }
 
@@ -16,4 +24,17 @@
 .card-icon {
   font-size: 22px;
   color: $grey-second;
+}
+
+.products__placeholder {
+  background-color: $grey-second;
+  height: 250px;
+
+  @media (max-width: 1000px) {
+    height: 200px;
+  }
+
+  @media (max-width: 800px) {
+    height: 160px;
+  }
 }
