@@ -10943,7 +10943,7 @@ small, .small {
 
 .card img {
   border-radius: 0;
-  max-height: 250px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
