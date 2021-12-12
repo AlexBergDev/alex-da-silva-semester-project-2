@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arctic Fashion | Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="dashboard">
+
+        <header>
+
+            <nav class="navbar navbar-light bg-dark fixed-top p-0">
+                <div class="container-fluid">
+
+                <button class="navbar-toggler p-0 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><img src="images/ui/hamburger-light.svg"></img></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/brand/logo-light.svg" alt="Arctic Fashion Logo">
+                </a>
+
+                <div class="navigation__icons">
+                    <a class="mx-1 mx-md-2" href="wishlist.html"><i><img src="images/ui/heart-light.svg" alt="Wishlist icon"></i></a>
+                    <a class="mx-1 mx-md-2" href="cart.html"><i><img src="images/ui/cart-light.svg" alt="Cart icon"></i></a>
+                </div>
+                
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <a class="btn btn-outline-dark" href="login.html">Login</a>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <h4 class="text-uppercase my-4">Search</h4>
+
+                        <div class="d-flex mb-4">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
+                        </div>
+
+                        <h4 class="text-uppercase my-4 mt-md-5">Collections</h4>
+
+                        <li class="nav-item">
+                            <a class="nav-link my-2" href="#">All items</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Black friday deals</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Jackets</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">T-shirts</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Jeans</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link my-2" href="#">Shoes</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="container p-4">
+
+                <h2 class="mt-5 pt-3 mb-3">Edit product</h2>
+
+                <hr class="mb-4" />
+
+                        <form class="border border-dark p-4 col-12 col-md-8 mx-auto">
+
+                            <div class="message-container"></div>
+
+                            <div class="mb-3 row">
+                                <label class="col-sm-2 col-form-label" for="product-featured">Featured</label>
+                                <div class="col-sm-10 form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="product-featured">
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="product-id" class="col-sm-2 col-form-label">ID</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control-plaintext text-muted" id="product-id" value="0">
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="product-title" class="col-sm-2 col-form-label">Title</label>
+                                <div class="col-sm-10">
+                                    <input id="product-title" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="product-description" class="col-sm-2 col-form-label">Description</label>
+                                <div class="col-sm-10">
+                                    <textarea id="product-description" class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="product-price" class="col-sm-2 col-form-label">Price</label>
+                                <div class="col-sm-10">
+                                    <input id="product-price" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="product-image_url" class="col-sm-2 col-form-label">Image URL</label>
+                                <div class="col-sm-10">
+                                    <input id="product-image_url" class="form-control">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-success text-white d-grid gap-2 col-12 mx-auto mb-2">Save changes</button>
+                            <div class="delete-container"></div>
+
+                        </form>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="copyright__container text-center p-3 text-white">
+              <p class="p-0 m-0 pb-2 pb-md-0">© 2022 Copyright Arctic Fashion</p>
+            </div>
+        </footer>
+
+        <script src="js/edit.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
