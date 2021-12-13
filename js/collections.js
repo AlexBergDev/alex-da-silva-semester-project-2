@@ -6,7 +6,7 @@ import searchTitle from "./ui/searchTitle.js";
 
 const url = baseUrl + "/products";
 
-// navigation();
+navigation();
 
 (async function () {
     const container = document.querySelector(".products-container")

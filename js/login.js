@@ -3,7 +3,7 @@ import displayMessage from "./components/displayMessage.js";
 import { getToken } from "./utils/storage.js";
 import { saveToken, saveUser } from "./utils/storage.js";
 import { baseUrl } from "./settings/api.js";
-// import navigation from "./components/navigation.js";
+import navigation from "./components/navigation.js";
 
 const form = document.querySelector(".login__form");
 const username = document.querySelector("#username");
@@ -16,7 +16,7 @@ if (token) {
     location.href = "/dashboard.html";
 }
 
-// navigation();
+navigation();
 
 form.addEventListener("submit", submitForm);
 

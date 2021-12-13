@@ -4,10 +4,11 @@ import navigation from "./components/navigation.js";
 import bookmarkClick from "./components/bookmarkClick.js";
 import { getBookmarks } from "./utils/storage.js";
 import cartClick from "./components/cartClick.js";
+import renderProducts from "./ui/renderProducts.js";
 
 const bookmarks = getBookmarks();
 
-// navigation();
+navigation();
 
 const h2 = document.querySelector("h2");
 const image = document.querySelector(".product-container_image");
@@ -28,6 +29,7 @@ if (!id) {
 }
 
 const productUrl = baseUrl + "/products/" + id;
+const url = baseUrl + "/products?featured=true";
 
 (async function () {
     try {
@@ -67,5 +69,20 @@ const productUrl = baseUrl + "/products/" + id;
 
     } catch (error) {
         displayMessage("alert-warning", error, ".product-container");
+    }
+})();
+
+
+(async function () {
+    const container = document.querySelector(".products-container")
+
+    try {
+        const response = await fetch(url);
+        const json = await response.json();
+
+        renderProducts(json, container);
+    } catch (error) {
+        console.log(error);
+        displayMessage("alert-danger", error, container);
     }
 })();

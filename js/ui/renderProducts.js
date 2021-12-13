@@ -11,7 +11,7 @@ export default function renderProducts(json, container) {
     container.innerHTML = "";
 
     if (json.length === 0) {
-        displayMessage("alert-info", EMPTY_PRODUCTS, ".products-container");
+        displayMessage("alert-info", EMPTY_PRODUCTS, container);
     }
         
     json.forEach(function (product) {
@@ -28,7 +28,7 @@ export default function renderProducts(json, container) {
     }
 
         container.innerHTML += `<div class="col">
-                                    <div class="card">
+                                    <div class="card mb-3">
                                     <a href="details.html?id=${product.id}"><img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.title}"></a>
                                         <div class="card-body p-0">
                                             <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>

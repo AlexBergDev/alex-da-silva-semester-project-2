@@ -2,12 +2,11 @@ import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/displayMessage.js";
 import navigation from "./components/navigation.js";
 import renderProducts from "./ui/renderProducts.js";
-import searchTitle from "./ui/searchTitle.js";
 
 const url = baseUrl + "/products?featured=true";
 const homeUrl = baseUrl + "/home";
 
-// navigation();
+navigation();
 
 (async function () {
     const container = document.querySelector(".products-container")

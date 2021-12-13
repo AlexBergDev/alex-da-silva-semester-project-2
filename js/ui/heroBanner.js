@@ -1,42 +1,41 @@
+const messages = [ "Arctic Fashion.", "Most elegant clothing.", "Up to 40% on outlet items.", "Order your next outfit now."];
+
+const container = document.querySelector("h1");
+
+// ATTENTION: I am not the creator of the original code.
+// Typewriter-effect originally from Daniel Groen.
+// I have done some minimal changes to fit my own project.
+// Original codepen: https://codepen.io/danielgroen/embed/VeRPOq?height=265&theme-id=1&slug-hash=VeRPOq&default-tab=js%2Cresult&user=danielgroen&embed-version=2&name=cp_embed_5#result-box
+
 document.addEventListener('DOMContentLoaded',function(event){
-    // array with texts to type in typewriter
-    var dataText = [ "Arctic Fashion.", "Most elegant clothing.", "Up to 40% on outlet items.", "Order your next outfit now."];
     
-    // type one text in the typwriter
-    // keeps calling itself until the text is finished
-    function typeWriter(text, i, fnCallback) {
-      // check if text isn't finished yet
+    function effect(text, i, fnCallback) {
       if (i < (text.length)) {
-        // add next character to h1
-       document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+       container.innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
   
-        // wait for a while and call this function again for next character
         setTimeout(function() {
-          typeWriter(text, i + 1, fnCallback)
-        }, 100);
+          effect(text, i + 1, fnCallback)
+        }, 80);
       }
-      // text finished, call callback if there is a callback function
+
       else if (typeof fnCallback == 'function') {
-        // call callback after timeout
         setTimeout(fnCallback, 700);
       }
     }
-    // start a typewriter animation for a text in the dataText array
-     function StartTextAnimation(i) {
-       if (typeof dataText[i] == 'undefined'){
+
+     function animation(i) {
+       if (typeof messages[i] == 'undefined'){
           setTimeout(function() {
-            StartTextAnimation(0);
-          }, 1000);
+            animation(0);
+          }, 700);
        }
-       // check if dataText[i] exists
-      if (i < dataText[i].length) {
-        // text exists! start typewriter animation
-       typeWriter(dataText[i], 0, function(){
-         // after callback (and whole text has been animated), start next text
-         StartTextAnimation(i + 1);
+
+      if (i < messages[i].length) {
+        effect(messages[i], 0, function(){
+         animation(i + 1);
        });
       }
     }
-    // start the text animation
-    StartTextAnimation(0);
+
+    animation(0);
   });

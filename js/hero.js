@@ -8,7 +8,7 @@ import { getToken } from "./utils/storage.js";
 const token = getToken();
 
 redirectUnauthorized();
-// navigation();
+navigation();
 
 const homeUrl = baseUrl + "/home";
 

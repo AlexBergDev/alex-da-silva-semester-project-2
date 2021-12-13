@@ -4,7 +4,7 @@ import navigation from "./components/navigation.js";
 import { getBookmarks } from "./utils/storage.js";
 import bookmarkClick from "./components/bookmarkClick.js";
 
-// navigation();
+navigation();
 
 export default function renderBookmarks() {
     const container = document.querySelector(".products-container");

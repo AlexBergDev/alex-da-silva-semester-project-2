@@ -9,7 +9,7 @@ import deleteButton from "./components/deleteButton.js";
 const token = getToken();
 
 redirectUnauthorized();
-// navigation();
+navigation();
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);

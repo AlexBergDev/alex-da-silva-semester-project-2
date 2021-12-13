@@ -8,7 +8,7 @@ import { getToken } from "./utils/storage.js";
 const token = getToken();
 
 redirectUnauthorized();
-// navigation();
+navigation();
 
 const form = document.querySelector("form");
 const title = document.querySelector("#product-title");

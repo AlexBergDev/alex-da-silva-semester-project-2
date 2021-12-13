@@ -4,7 +4,7 @@ import navigation from "./components/navigation.js";
 import { getCart } from "./utils/storage.js";
 import cartClick from "./components/cartClick.js";
 
-// navigation();
+navigation();
 
 export default function renderCart() {
     const container = document.querySelector(".cart-container");

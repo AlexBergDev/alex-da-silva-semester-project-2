@@ -8,7 +8,7 @@ import redirectUnauthorized from "./components/redirectUnauthorized.js";
 logoutButton();
 redirectUnauthorized();
 dashboardMessage();
-// navigation();
+navigation();
 
 const productUrl = baseUrl + "/products";
 
