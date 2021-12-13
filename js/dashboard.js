@@ -1,4 +1,5 @@
 import logoutButton from "./components/logoutButton.js";
+import dashboardMessage from "./ui/dashboardMessage.js";
 import { baseUrl } from "./settings/api.js";
 import navigation from "./components/navigation.js";
 import displayMessage from "./components/displayMessage.js";
@@ -6,6 +7,7 @@ import redirectUnauthorized from "./components/redirectUnauthorized.js";
 
 logoutButton();
 redirectUnauthorized();
+dashboardMessage();
 // navigation();
 
 const productUrl = baseUrl + "/products";
