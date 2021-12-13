@@ -5,6 +5,7 @@ import renderProducts from "./ui/renderProducts.js";
 import searchTitle from "./ui/searchTitle.js";
 
 const url = baseUrl + "/products";
+const homeUrl = baseUrl + "/home";
 
 // navigation();
 
@@ -20,5 +21,18 @@ const url = baseUrl + "/products";
     } catch (error) {
         console.log(error);
         displayMessage("alert-danger", error, container);
+    }
+})();
+
+(async function () {
+
+    try {
+        const response = await fetch(homeUrl);
+        const home = await response.json();
+        
+        document.getElementById("jumbotron").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(${baseUrl + home.hero_banner.url})`;
+
+    } catch (error) {
+        displayMessage("alert-danger", error, "jumbotron");
     }
 })();
