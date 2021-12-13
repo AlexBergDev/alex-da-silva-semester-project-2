@@ -4,7 +4,7 @@ import navigation from "./components/navigation.js";
 import renderProducts from "./ui/renderProducts.js";
 import searchTitle from "./ui/searchTitle.js";
 
-const url = baseUrl + "/products";
+const url = baseUrl + "/products?featured=true";
 const homeUrl = baseUrl + "/home";
 
 // navigation();
@@ -17,7 +17,6 @@ const homeUrl = baseUrl + "/home";
         const json = await response.json();
 
         renderProducts(json, container);
-        searchTitle(json, container);
     } catch (error) {
         console.log(error);
         displayMessage("alert-danger", error, container);
