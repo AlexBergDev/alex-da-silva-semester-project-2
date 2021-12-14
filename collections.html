@@ -28,6 +28,8 @@
 
                 <h2 class="mt-5 mb-3">All items</h2>
 
+                <p id="demo"></p>
+
                 <hr class="mb-4" />
 
                 <div class="row">
@@ -36,16 +38,17 @@
 
                         <div class="row g-3">
                             <div class="col">
-                                <select class="form-select h4" aria-label="Default select example">
-                                    <option selected>Sort</option>
-                                    <option value="1">Newest</option>
-                                    <option value="2">Cheapest</option>
-                                    <option value="3">Most expensive</option>
-                                    <option value="4">Most popular</option>
-                                  </select>
+                                <select class="form-select h4" aria-label="Sorting" id="sorting">
+                                  <option value="" selected>Sort</option>
+                                  <option value="?featured=true">Featured</option>
+                                  <option value="?_sort=price:ASC">Price lowest</option>
+                                  <option value="?_sort=price:DESC">Price highest</option>
+                                  <option value="?_sort=title:ASC">Ascending order</option>
+                                  <option value="?_sort=title:DESC">Descending order</option>  
+                                </select>
                             </div>
                             <div class="col">
-                                <select class="form-select h4" aria-label="Default select example">
+                                <select class="form-select h4" aria-label="Color">
                                     <option selected>Color</option>
                                     <option value="1">Blue</option>
                                     <option value="2">Red</option>
@@ -68,7 +71,7 @@
                         <hr class="my-4 d-block d-sm-none" />
 
                           <form class="d-flex mb-4 mt-3 mt-sm-0">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control me-2" id="collections-search" placeholder="Search.." data-title="title" data-description="description" aria-label="Search">
                             <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
                           </form>
 

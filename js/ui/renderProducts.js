@@ -11,7 +11,7 @@ export default function renderProducts(json, container) {
     container.innerHTML = "";
 
     if (json.length === 0) {
-        displayMessage("alert-info", EMPTY_PRODUCTS, container);
+        displayMessage("alert-info", EMPTY_PRODUCTS, ".products-container");
     }
         
     json.forEach(function (product) {
