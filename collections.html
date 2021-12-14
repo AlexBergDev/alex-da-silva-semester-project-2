@@ -36,33 +36,22 @@
 
                     <div class="col-12 col-md-2">
 
-                        <div class="row g-3">
-                            <div class="col">
+                        <div class="row g-2">
+                            <div class="col-6 col-md-12">
                                 <select class="form-select h4" aria-label="Sorting" id="sorting">
                                   <option value="" selected>Sort</option>
                                   <option value="?featured=true">Featured</option>
-                                  <option value="?_sort=price:ASC">Price lowest</option>
-                                  <option value="?_sort=price:DESC">Price highest</option>
                                   <option value="?_sort=title:ASC">Ascending order</option>
                                   <option value="?_sort=title:DESC">Descending order</option>  
                                 </select>
                             </div>
-                            <div class="col">
-                                <select class="form-select h4" aria-label="Color">
-                                    <option selected>Color</option>
-                                    <option value="1">Blue</option>
-                                    <option value="2">Red</option>
-                                    <option value="3">Gold</option>
-                                    <option value="4">White</option>
-                                    <option value="5">Black</option>
+                            <div class="col-6 col-md-12">
+                                <select class="form-select h4" aria-label="Price" id="price">
+                                  <option value="" selected>Price</option>
+                                  <option value="?_sort=price:ASC">Price lowest</option>
+                                  <option value="?_sort=price:DESC">Price highest</option>
                                   </select>
                             </div>
-                            <div class="col-12 form-check h4">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                  Featured
-                                </label>
-                              </div>
                           </div>
 
                     </div>
@@ -72,7 +61,7 @@
 
                           <form class="d-flex mb-4 mt-3 mt-sm-0">
                             <input class="form-control me-2" id="collections-search" placeholder="Search.." data-title="title" data-description="description" aria-label="Search">
-                            <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
+                            <button class="btn navigation__icons" type="button"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
                           </form>
 
                     </div>

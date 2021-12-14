@@ -53,10 +53,10 @@ export default function navigation() {
 
                                         <h4 class="text-uppercase my-3">Search</h4>
 
-                                        <div class="d-flex mb-4">
+                                        <a href="collections.html" class="d-flex mb-4">
                                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                             <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
-                                        </div>
+                                        </a>
 
                                         <h4 class="text-uppercase my-4 mt-md-5">Collections</h4>
 

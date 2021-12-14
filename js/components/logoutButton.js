@@ -1,4 +1,4 @@
-import { clearStorage } from "../utils/storage.js";
+import { clearToken } from "../utils/storage.js";
 
 export default function logoutButton() {
     const button = document.querySelector("#logout");
@@ -6,7 +6,7 @@ export default function logoutButton() {
     if (button) {
         button.onclick = function () {
         
-                clearStorage();
+                clearToken();
                 location.href = "/";
         };
     }
