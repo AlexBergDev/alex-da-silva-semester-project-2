@@ -2,6 +2,8 @@ import { getCart } from "../utils/storage.js";
 import { saveCart } from "../utils/storage.js";
 
 export default function cartClick() {
+    this.classList.toggle("fa");
+    this.classList.toggle("far");
 
     const id = this.dataset.id;
     const title = this.dataset.title;

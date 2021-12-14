@@ -3,7 +3,6 @@ import displayMessage from "./components/displayMessage.js";
 import navigation from "./components/navigation.js";
 import renderProducts from "./ui/renderProducts.js";
 import searchProduct from "./ui/searchProduct.js";
-import loadingAnimation from "./ui/loadingAnimation.js";
 
 const url = baseUrl + "/products";
 
@@ -16,7 +15,6 @@ navigation();
         const response = await fetch(url);
         const json = await response.json();
 
-        loadingAnimation(container);
         renderProducts(json, container);
         searchProduct(json, container);
     } catch (error) {
@@ -37,7 +35,6 @@ document.getElementById('sorting').addEventListener('change', function() {
             const response = await fetch(sortingUrl);
             const json = await response.json();
     
-            loadingAnimation(container);
             renderProducts(json, container);
         } catch (error) {
             console.log(error);
@@ -57,7 +54,6 @@ document.getElementById('sorting').addEventListener('change', function() {
             const response = await fetch(sortingUrl);
             const json = await response.json();
     
-            loadingAnimation(container);
             renderProducts(json, container);
         } catch (error) {
             console.log(error);

@@ -28,12 +28,12 @@ export default function renderProducts(json, container) {
     }
 
         container.innerHTML += `<div class="col">
-                                    <div class="card mb-3">
-                                    <a href="details.html?id=${product.id}"><img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.title}"></a>
-                                        <div class="card-body p-0">
+                                    <div class="card shadow-sm rounded">
+                                    <a href="details.html?id=${product.id}"><img src="${baseUrl + product.image.url}" class="card-img-top rounded-top" alt="${product.title}"></a>
+                                        <div class="card-body p-2">
                                             <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>
                                             <a href="details.html?id=${product.id}">
-                                                <h3 class="m-0">${product.title}</h3>
+                                                <h3 class="mb-1">${product.title}</h3>
                                                 <div class="card-text h3">${product.price} kr</div>
                                             </a>
                                         </div>
