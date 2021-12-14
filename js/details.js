@@ -54,7 +54,7 @@ const url = baseUrl + "/products?featured=true";
         description.innerHTML = `${product.description}`;
         price.innerHTML = `${product.price} kr`;
         wishlist.innerHTML = `<i class="${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>`;
-        addToCart.innerHTML = `<button type="button" class="cart-button btn btn-dark shadow" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}">Add to cart</button>`;
+        addToCart.innerHTML = `<button type="button" class="cart-button btn btn-dark shadow d-grid gap-2 col-12 col-md-6" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}">Add to cart</button>`;
 
         const bookmarkButton = document.querySelectorAll(".card-icon i");
         const cartButton = document.querySelectorAll(".card-button");

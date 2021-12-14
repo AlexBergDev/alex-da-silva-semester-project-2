@@ -12,84 +12,20 @@
     </head>
     <body class="dashboard">
 
-        <header>
-
-            <nav class="navbar navbar-light bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                <button class="navbar-toggler p-0 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span><img src="images/ui/hamburger-light.svg"></img></span>
-                </button>
-
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/brand/logo-light.svg" alt="Arctic Fashion Logo">
-                </a>
-
-                <div class="navigation__icons">
-                    <a class="mx-1 mx-md-2" href="wishlist.html"><i><img src="images/ui/heart-light.svg" alt="Wishlist icon"></i></a>
-                    <a class="mx-1 mx-md-2" href="cart.html"><i><img src="images/ui/cart-light.svg" alt="Cart icon"></i></a>
-                </div>
-                
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                      <a class="btn btn-outline-dark" href="login.html">Login</a>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
-                        <h4 class="text-uppercase my-4">Search</h4>
-
-                        <div class="d-flex mb-4">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
-                        </div>
-
-                        <h4 class="text-uppercase my-4 mt-md-5">Collections</h4>
-
-                        <li class="nav-item">
-                            <a class="nav-link my-2" href="#">All items</a>
-                          </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Black friday deals</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Jackets</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">T-shirts</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Jeans</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Shoes</a>
-                        </li>
-
-                      </ul>
-                    </div>
-                  </div>
-
-                </div>
-            </nav>
-
-        </header>
+        <header></header>
 
         <main>
 
             <section class="container p-4">
 
-                
-
                 <h2 class="mt-5 pt-3 mb-3">Add product</h2>
 
                 <hr class="mb-4" />
 
-                        <form class="border border-dark p-4 col-12 col-md-8 mx-auto">
+                        <form class="border-grey rounded p-4 col-12 col-md-8 mx-auto">
 
                             <div class="mb-4 d-grid gap-2 d-flex">
-                                <a href="dashboard.html" class="btn btn-outline-dark" type="button"><i class="fas fa-arrow-left me-2"></i>Go Back</a>
+                                <a href="dashboard.html" class="btn btn-outline-dark"><i class="fas fa-arrow-left me-2"></i>Go Back</a>
                               </div>
 
                             <div class="message-container"></div>
@@ -103,25 +39,25 @@
 
                             <div class="mb-3">
                                 <label for="product-title" class="sr-only">Title</label>
-                                <input id="product-title" class="form-control" placeholder="Title" autofocus="">
+                                <input id="product-title" class="form-control form-control--border" placeholder="Title" autofocus="">
                             </div>
 
                             <div class="mb-3">
                                 <label for="product-description" class="sr-only">Description</label>
-                                <textarea id="product-description" class="form-control" placeholder="Description" rows="3"></textarea>
+                                <textarea id="product-description" class="form-control form-control--border" placeholder="Description" rows="10"></textarea>
                             </div>
 
                             <div class="mb-3">
                                 <label for="product-price" class="sr-only">Price</label>
-                                <input id="product-price" class="form-control" placeholder="Price">
+                                <input id="product-price" class="form-control form-control--border" placeholder="Price">
                             </div>
 
                             <div class="mb-4">
                                 <label for="product-image_url" class="sr-only">Image URL</label>
-                                <input id="product-image_url" class="form-control" placeholder="Image URL">
+                                <input id="product-image_url" class="form-control form-control--border" placeholder="Image URL">
                             </div>
 
-                            <button class="btn btn-success text-white d-grid gap-2 col-12 mx-auto mb-2">Publish</button>
+                            <button class="btn btn-success text-white d-grid gap-2 col-12 col-md-6 mx-auto mb-2">Publish</button>
 
                         </form>
 
@@ -129,7 +65,7 @@
 
         </main>
 
-        <footer>
+        <footer class="footer--bottom">
             <div class="copyright__container text-center p-3 text-white">
               <p class="p-0 m-0 pb-2 pb-md-0">© 2022 Copyright Arctic Fashion</p>
             </div>

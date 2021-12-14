@@ -12,69 +12,7 @@
     </head>
     <body>
 
-        <header>
-
-            <nav class="navbar navbar-light bg-dark fixed-top p-0">
-                <div class="container-fluid">
-
-                <button class="navbar-toggler p-0 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span><img src="images/ui/hamburger-light.svg"></img></span>
-                </button>
-
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/brand/logo-light.svg" alt="Arctic Fashion Logo">
-                </a>
-
-                <div class="navigation__icons">
-                    <a class="mx-1 mx-md-2" href="wishlist.html"><i><img src="images/ui/heart-light.svg" alt="Wishlist icon"></i></a>
-                    <a class="mx-1 mx-md-2" href="cart.html"><i><img src="images/ui/cart-light.svg" alt="Cart icon"></i></a>
-                </div>
-                
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                      <a class="btn btn-outline-dark" href="login.html">Login</a>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
-                        <h4 class="text-uppercase my-4">Search</h4>
-
-                        <form class="d-flex mb-4">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
-                        </form>
-
-                        <h4 class="text-uppercase my-4 mt-md-5">Collections</h4>
-
-                        <li class="nav-item">
-                            <a class="nav-link my-2 active" href="#">All items</a>
-                          </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Black friday deals</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Jackets</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">T-shirts</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Jeans</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link my-2" href="#">Shoes</a>
-                        </li>
-
-                      </ul>
-                    </div>
-                  </div>
-
-                </div>
-            </nav>
-
-        </header>
+        <header></header>
 
         <main>
 
@@ -107,7 +45,7 @@
                         <div class="product-container col-12 col-md-6 order-md-0">
                             <hr class="d-block d-sm-none" />
                             <h3 class="card-title mt-4 mt-md-0">Description</h3>
-                            <p class="placeholder-glow product-container_description card-text h3">
+                            <p class="placeholder-glow product-container_description">
                               <span class="placeholder col-6"></span>
                               <span class="placeholder col-8"></span>
                               <span class="placeholder col-4"></span>
@@ -119,7 +57,7 @@
 
                             <div class="quantity mt-4">
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="quantity__btn quantity__btn--minus shadow">-</button>
-                                <input class="quantity__input" min="1" name="quantity" value="1" type="number">
+                                <input class="quantity__input border" min="1" name="quantity" value="1" type="number">
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="quantity__btn quantity__btn--plus shadow">+</button>
                             </div>
 

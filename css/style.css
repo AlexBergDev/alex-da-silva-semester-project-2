@@ -10743,12 +10743,26 @@ fieldset:disabled .btn {
 
 html {
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  position: relative;
+  margin: 0;
   min-height: 100%;
-  padding: 0;
   background-color: #f5f5f5;
+}
+
+.dashboard {
+  padding-bottom: 6rem;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .cta__container {
@@ -10900,6 +10914,14 @@ a:hover {
   font-size: 13px;
 }
 
+.table-items {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300 !important;
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+
 input,
 textarea,
 label {
@@ -10984,6 +11006,53 @@ small, .small {
   }
 }
 
+.product-container_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 500px;
+}
+
+@media (max-width: 1200px) {
+  .product-container_image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 990px) {
+  .product-container_image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 770px) {
+  .product-container_image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 570px) {
+  .product-container_image {
+    height: 360px;
+  }
+}
+
+.product-container_image img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .offcanvas {
   background-color: #f5f5f5;
 }
@@ -11007,8 +11076,9 @@ footer {
 
 .footer--bottom {
   position: absolute;
+  right: 0;
   bottom: 0;
-  width: 100%;
+  left: 0;
 }
 
 .footer__icons i {
@@ -11037,6 +11107,15 @@ footer {
   padding: 8px;
   border: 0;
   border-bottom: 1px solid #111111;
+}
+
+.form-control--border {
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+}
+
+.border-grey {
+  border: 1px solid #afafaf;
 }
 
 .quantity__input {

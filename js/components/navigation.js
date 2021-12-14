@@ -31,16 +31,16 @@ export default function navigation() {
                                 <div class="container-fluid">
 
                                 <button class="navbar-toggler p-0 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                                    <span><img src="images/ui/hamburger-light.svg"></img></span>
+                                    <span><img src="images/ui/hamburger.svg"></img></span>
                                 </button>
 
                                 <a class="navbar-brand" href="/">
-                                    <img src="images/brand/logo-light.svg" alt="Arctic Fashion Logo">
+                                    <img src="images/brand/logo-white.svg" alt="Arctic Fashion Logo">
                                 </a>
 
                                 <div class="navigation__icons">
-                                    <a class="mx-1 mx-md-2" href="wishlist.html"><i><img src="images/ui/heart-light.svg" alt="Wishlist icon"></i></a>
-                                    <a class="mx-1 mx-md-2" href="cart.html"><i><img src="images/ui/cart-light.svg" alt="Cart icon"></i></a>
+                                    <a class="mx-1 mx-md-2" href="wishlist.html"><i><img src="images/ui/heart.svg" alt="Wishlist icon"></i></a>
+                                    <a class="mx-1 mx-md-2" href="cart.html"><i><img src="images/ui/cart.svg" alt="Cart icon"></i></a>
                                 </div>
                                 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">

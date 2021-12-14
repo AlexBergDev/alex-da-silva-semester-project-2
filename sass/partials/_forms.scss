@@ -6,6 +6,15 @@
   border-bottom: 1px solid $black;
 }
 
+.form-control--border {
+  border: 1px solid $grey-second;
+  border-radius: 5px;
+}
+
+.border-grey {
+  border: 1px solid $grey-second;
+}
+
 .quantity__input {
   border-radius: 5px;
   background-color: $white;

@@ -38,3 +38,34 @@
     height: 160px;
   }
 }
+
+.product-container_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 500px;
+
+  @media (max-width: 1200px) {
+    height: 400px;
+  }
+
+  @media (max-width: 990px) {
+    height: 300px;
+  }
+
+  @media (max-width: 770px) {
+    height: 360px;
+  }
+
+  @media (max-width: 570px) {
+    height: 360px;
+  }
+
+  & img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
