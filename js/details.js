@@ -17,7 +17,6 @@ const breadcrumb = document.querySelector(".product-container_breadcrumb");
 const description = document.querySelector(".product-container_description");
 const price = document.querySelector(".product-container_price");
 const wishlist = document.querySelector(".product-container_wishlist");
-const star = document.querySelector(".product-container_star");
 const addToCart = document.querySelector(".product-container_button");
 
 const queryString = document.location.search;
@@ -39,22 +38,22 @@ const url = baseUrl + "/products?featured=true";
         const product = await response.json();
 
         let bookmarkClass = "far";
-        let starClass = "far";
+        let cartClass = "btn-dark";
 
-        const doesObjectExist = bookmarks.find(function (fav) {
+        const doesBookmarkExist = bookmarks.find(function (fav) {
             return parseInt(fav.id) === product.id;
         });
 
-        const doesObjectExistTwo = cart.find(function (cartItem) {
+        const doesCartExist = cart.find(function (cartItem) {
             return parseInt(cartItem.id) === product.id;
         });
 
-        if (doesObjectExist) {
+        if (doesBookmarkExist) {
             bookmarkClass = "fa";
         }
 
-        if (doesObjectExistTwo) {
-            starClass = "fa";
+        if (doesCartExist) {
+            cartClass = "btn-danger";
         }
 
         document.title = `Arctic Fashion | ${product.title}`;
@@ -64,11 +63,10 @@ const url = baseUrl + "/products?featured=true";
         description.innerHTML = `${product.description}`;
         price.innerHTML = `${product.price} kr`;
         wishlist.innerHTML = `<i class="${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>`;
-        star.innerHTML = `<i class="${starClass} fa-star" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>`;
-        addToCart.innerHTML = `<div class="cart-button btn btn-dark shadow d-grid gap-2 col-12 col-md-6" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}">Add to cart</div>`;
+        addToCart.innerHTML = `<div class="cart-button btn ${cartClass} text-white px-5 shadow rounded" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"><i class="fas fa-shopping-bag"></i></div>`;
 
         const bookmarkButton = document.querySelectorAll(".product-container_wishlist i");
-        const cartButton = document.querySelectorAll(".product-container_star i");
+        const cartButton = document.querySelectorAll(".card-button .cart-button");
 
         bookmarkButton.forEach((button) => {
             button.addEventListener("click", bookmarkClick);
