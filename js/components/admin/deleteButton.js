@@ -1,6 +1,6 @@
-import { DELETE_CONFIRM } from "../constants/messages.js"
-import { baseUrl } from "../settings/api.js";
-import { getToken } from "../utils/storage.js";
+import { DELETE_CONFIRM } from "../../constants/messages.js"
+import { baseUrl } from "../../settings/api.js";
+import { getToken } from "../../utils/storage.js";
 
 export default function deleteButton(id) {
     const container = document.querySelector(".delete-container");
