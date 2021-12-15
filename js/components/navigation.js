@@ -1,5 +1,5 @@
 import { getUsername } from "../utils/storage.js";
-import logoutButton from "./logoutButton.js";
+import logoutButton from "./auth/logoutButton.js";
 
 export default function navigation() {
     const { pathname } = document.location;
@@ -57,7 +57,7 @@ export default function navigation() {
                                             <button class="btn navigation__icons" type="submit"><i><img src="images/ui/search.svg" alt="Search icon"></i></button>
                                         </a>
 
-                                        <h4 class="text-uppercase my-4 mt-md-5">Collections</h4>
+                                        <h4 class="text-uppercase my-4 mt-md-5">Catalogue</h4>
 
                                         <li class="nav-item">
                                         <a class="nav-link my-2 ${pathname === "/collections.html" ? "active" : ""}" href="collections.html">All items</a>

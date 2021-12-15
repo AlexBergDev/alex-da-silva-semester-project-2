@@ -1,12 +1,16 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/displayMessage.js";
 import navigation from "./components/navigation.js";
-import renderProducts from "./ui/renderProducts.js";
-import searchProduct from "./ui/searchProduct.js";
+import footer from "./components/footer.js";
+import renderProducts from "./ui/products/renderProducts.js";
+import searchProduct from "./ui/products/searchProduct.js";
 
 const url = baseUrl + "/products";
 
-navigation();
+( function() {
+    navigation();
+    footer();
+}());
 
 (async function () {
     const container = document.querySelector(".products-container")

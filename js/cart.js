@@ -1,10 +1,15 @@
 import { EMPTY_CART } from "./constants/messages.js"
 import displayMessage from "./components/displayMessage.js";
 import navigation from "./components/navigation.js";
+import footer from "./components/footer.js";
 import { getCart } from "./utils/storage.js";
-import cartClick from "./components/cartClick.js";
+import cartClick from "./components/cart/cartClick.js";
 
-navigation();
+( function() {
+    navigation();
+    footer();
+    renderCart();
+}());
 
 export default function renderCart() {
     const container = document.querySelector(".cart-container");
@@ -48,5 +53,3 @@ export default function renderCart() {
         });
     };
 }
-
-renderCart();

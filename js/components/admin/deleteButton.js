@@ -5,7 +5,7 @@ import { getToken } from "../utils/storage.js";
 export default function deleteButton(id) {
     const container = document.querySelector(".delete-container");
 
-    container.innerHTML = `<button type="button" class="btn btn-danger text-white d-grid gap-2 col-12 col-md-6 mx-auto delete">Delete</button>`;
+    container.innerHTML = `<button type="button" class="btn btn-danger shadow text-white d-grid gap-2 col-12 col-md-6 mx-auto delete">Delete</button>`;
 
     const button = document.querySelector("button.delete");
 

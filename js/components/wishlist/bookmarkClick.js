@@ -1,5 +1,5 @@
-import { getBookmarks } from "../utils/storage.js";
-import { saveBookmarks } from "../utils/storage.js";
+import { getBookmarks } from "../../utils/storage.js";
+import { saveBookmarks } from "../../utils/storage.js";
 
 export default function bookmarkClick() {
     this.classList.toggle("fa");

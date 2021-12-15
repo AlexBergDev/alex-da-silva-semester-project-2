@@ -1,15 +1,19 @@
-import { baseUrl } from "./settings/api.js";
-import displayMessage from "./components/displayMessage.js";
 import navigation from "./components/navigation.js";
-import bookmarkClick from "./components/bookmarkClick.js";
+import footer from "./components/footer.js";
+import displayMessage from "./components/displayMessage.js";
+import { baseUrl } from "./settings/api.js";
+import bookmarkClick from "./components/wishlist/bookmarkClick.js";
 import { getBookmarks, getCart } from "./utils/storage.js";
-import cartClick from "./components/cartClick.js";
-import renderProducts from "./ui/renderProducts.js";
+import cartClick from "./components/cart/cartClick.js";
+import renderProducts from "./ui/products/renderProducts.js";
 
 const bookmarks = getBookmarks();
 const cart = getCart();
 
-navigation();
+( function() {
+    navigation();
+    footer();
+}());
 
 const h2 = document.querySelector("h2");
 const image = document.querySelector(".product-container_image");

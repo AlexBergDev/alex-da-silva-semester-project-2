@@ -1,6 +1,11 @@
 .card {
   border-radius: 0;
   border: 0;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 
   img {
     border-radius: 0;
@@ -24,6 +29,15 @@
 .card-icon {
   font-size: 22px;
   color: $grey-second;
+}
+
+.card-body i {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+  }
 }
 
 .products__placeholder {

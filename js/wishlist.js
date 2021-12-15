@@ -1,10 +1,15 @@
-import { EMPTY_BOOKMARKS } from "./constants/messages.js"
-import displayMessage from "./components/displayMessage.js";
 import navigation from "./components/navigation.js";
+import footer from "./components/footer.js";
+import displayMessage from "./components/displayMessage.js";
+import { EMPTY_BOOKMARKS } from "./constants/messages.js"
 import { getBookmarks } from "./utils/storage.js";
-import bookmarkClick from "./components/bookmarkClick.js";
+import bookmarkClick from "./components/wishlist/bookmarkClick.js";
 
-navigation();
+( function() {
+    navigation();
+    footer();
+    renderBookmarks();
+}());
 
 export default function renderBookmarks() {
     const container = document.querySelector(".products-container");
@@ -53,5 +58,3 @@ export default function renderBookmarks() {
         });
     };
 }
-
-renderBookmarks();

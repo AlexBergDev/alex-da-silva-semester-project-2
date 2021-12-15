@@ -1,15 +1,17 @@
-import { EMPTY_INPUT_VALUE, SAVED_SUCCESS } from "./constants/messages.js"
+import redirectUnauthorized from "./components/auth/redirectUnauthorized.js";
 import navigation from "./components/navigation.js";
-import redirectUnauthorized from "./components/redirectUnauthorized.js";
-import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/displayMessage.js";
+import { EMPTY_INPUT_VALUE, SAVED_SUCCESS } from "./constants/messages.js"
+import { baseUrl } from "./settings/api.js";
 import { getToken } from "./utils/storage.js";
-import deleteButton from "./components/deleteButton.js";
+import deleteButton from "./components/admin/deleteButton.js";
 
 const token = getToken();
 
-redirectUnauthorized();
-navigation();
+( function() {
+    redirectUnauthorized();
+    navigation();
+}());
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);

@@ -1,14 +1,16 @@
 import { EMPTY_INPUT_VALUE, PRODUCT_PUBLISHED, STANDARD_ERROR } from "./constants/messages.js"
 import navigation from "./components/navigation.js";
-import redirectUnauthorized from "./components/redirectUnauthorized.js";
+import redirectUnauthorized from "./components/auth/redirectUnauthorized.js";
 import displayMessage from "./components/displayMessage.js";
 import { baseUrl } from "./settings/api.js";
 import { getToken } from "./utils/storage.js";
 
 const token = getToken();
 
-redirectUnauthorized();
-navigation();
+( function() {
+    redirectUnauthorized();
+    navigation();
+}());
 
 const form = document.querySelector("form");
 const title = document.querySelector("#product-title");

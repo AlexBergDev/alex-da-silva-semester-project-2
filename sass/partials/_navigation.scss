@@ -2,16 +2,11 @@
   background-color: $white;
 }
 
-.navigation__icons {
-  & img {
-    max-width: 20px;
-    margin: 0px 5px;
-  }
-}
+.navigation__icons i {
+  transition: all 0.2s ease-in-out;
 
-.navbar-toggler {
-  & img {
-    max-width: 30px;
+  &:hover {
+    transform: scale(1.15);
   }
 }
 

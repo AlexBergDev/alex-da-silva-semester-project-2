@@ -1,8 +1,8 @@
-import { EMPTY_PRODUCTS } from "../constants/messages.js"
-import { baseUrl } from "../settings/api.js";
-import displayMessage from "../components/displayMessage.js";
-import bookmarkClick from "../components/bookmarkClick.js";
-import { getBookmarks } from "../utils/storage.js";
+import { EMPTY_PRODUCTS } from "../../constants/messages.js"
+import { baseUrl } from "../../settings/api.js";
+import displayMessage from "../../components/displayMessage.js";
+import bookmarkClick from "../../components/wishlist/bookmarkClick.js";
+import { getBookmarks } from "../../utils/storage.js";
 
 const bookmarks = getBookmarks();
 
