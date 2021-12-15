@@ -31,14 +31,14 @@ export default function renderBookmarks() {
         }
         
         container.innerHTML += `<div class="col">
-                                    <div class="card shadow-sm rounded">
+                                    <div class="card bg-light shadow-sm rounded">
                                         <a href="details.html?id=${bookmarks[i].id}">
                                             <img src="${bookmarks[i].image}" class="card-img-top" alt="${bookmarks[i].title}">
                                         </a>
-                                        <div class="card-body p-2">
+                                        <div class="card-body p-1">
                                             <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${bookmarks[i].id}" data-title="${bookmarks[i].title}" data-price="${bookmarks[i].price}" data-image="${bookmarks[i].image}"></i>
                                             <a href="details.html?id=${bookmarks[i].id}">
-                                                <h3 class="mb-1">${bookmarks[i].title}</h3>
+                                                <h3 class="m-0">${bookmarks[i].title}</h3>
                                                 <div class="card-text h3">${bookmarks[i].price} kr</div>
                                             </a>     
                                         </div>

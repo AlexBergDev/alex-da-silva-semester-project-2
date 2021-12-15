@@ -26,11 +26,11 @@ export default function renderCart() {
                                         <a href="details.html?id=${insideCart[i].id}">
                                             <img src="${insideCart[i].image}" class="card-img-top rounded-top" alt="${insideCart[i].title}">
                                         </a>
-                                        <div class="card-body p-2">
+                                        <div class="card-body p-1">
                                             <i class="card-icon float-end fas fa-times" data-id="${insideCart[i].id}" data-title="${insideCart[i].title}" data-price="${insideCart[i].price}" data-image="${insideCart[i].image}"></i>
                                             <a href="details.html?id=${insideCart[i].id}">
-                                                <h3 class="mb-1">${insideCart[i].title}</h3>
-                                                <div class="card-text h3">${insideCart[i].price} kr</div>
+                                                <h3 class="m-0">${insideCart[i].title}</h3>
+                                                <div class="card-text m-0 h3">${insideCart[i].price} kr</div>
                                             </a>     
                                         </div>
                                     </div>

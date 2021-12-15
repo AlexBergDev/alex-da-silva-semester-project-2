@@ -16,10 +16,9 @@ export default function navigation() {
     if (username) {
         authLink = `<div class="offcanvas-header">
                         
-                        <div class="d-grid gap-2 d-md-block">
-                            
-                            <a class="btn btn-outline-dark" href="dashboard.html">Admin</a>
+                        <div>
                             <button class="btn btn-outline-danger" id="logout">Logout</button>
+                            <a class="btn btn-outline-dark" href="dashboard.html">Admin</a>
                             <p class="mt-2 mt-md-3 text-capitalize">Logged in: <strong>${username}</strong></p>
                         </div>
 
@@ -30,8 +29,8 @@ export default function navigation() {
     container.innerHTML = `<nav class="navbar navbar-light bg-dark fixed-top p-0">
                                 <div class="container-fluid">
 
-                                <button class="navbar-toggler p-0 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                                    <span><img src="images/ui/hamburger.svg"></img></span>
+                                <button class="navbar-toggler fs-3 text-white p-1 me-5 me-md-0 rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                    <span><i class="fas fa-bars"></i></span>
                                 </button>
 
                                 <a class="navbar-brand" href="/">
@@ -39,8 +38,8 @@ export default function navigation() {
                                 </a>
 
                                 <div class="navigation__icons">
-                                    <a class="mx-1 mx-md-2" href="wishlist.html"><i><img src="images/ui/heart.svg" alt="Wishlist icon"></i></a>
-                                    <a class="mx-1 mx-md-2" href="cart.html"><i><img src="images/ui/cart.svg" alt="Cart icon"></i></a>
+                                    <a class="mx-1 mx-md-2 fs-5 text-white me-3" href="wishlist.html"><i class="fas fa-heart"></i></a>
+                                    <a class="mx-1 mx-md-2 fs-5 text-white" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
                                 </div>
                                 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
