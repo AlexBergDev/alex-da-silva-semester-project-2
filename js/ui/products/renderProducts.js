@@ -34,7 +34,7 @@ export default function renderProducts(json, container) {
                                             <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>
                                             <a href="details.html?id=${product.id}">
                                                 <h3 class="m-0">${product.title}</h3>
-                                                <div class="card-text h3">${product.price} kr</div>
+                                                <div class="card-text h3">${product.price} NOK</div>
                                             </a>
                                         </div>
                                     </div>

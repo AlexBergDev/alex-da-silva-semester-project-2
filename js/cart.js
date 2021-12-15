@@ -35,7 +35,7 @@ export default function renderCart() {
                                             <i class="card-icon float-end fas fa-times" data-id="${insideCart[i].id}" data-title="${insideCart[i].title}" data-price="${insideCart[i].price}" data-image="${insideCart[i].image}"></i>
                                             <a href="details.html?id=${insideCart[i].id}">
                                                 <h3 class="m-0">${insideCart[i].title}</h3>
-                                                <div class="card-text m-0 h3">${insideCart[i].price} kr</div>
+                                                <div class="card-text m-0 h3">${insideCart[i].price} NOK</div>
                                             </a>     
                                         </div>
                                     </div>
@@ -43,7 +43,7 @@ export default function renderCart() {
 
         checkoutContainer.innerHTML += `<p class="m-0 float-end">1x</p>
                                         <p class="m-0">${insideCart[i].title}</p>
-                                        <p>${insideCart[i].price} kr</p>`;
+                                        <p>${insideCart[i].price} NOK</p>`;
 
         const cartButton = document.querySelectorAll(".card i");
 

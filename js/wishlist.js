@@ -44,7 +44,7 @@ export default function renderBookmarks() {
                                             <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${bookmarks[i].id}" data-title="${bookmarks[i].title}" data-price="${bookmarks[i].price}" data-image="${bookmarks[i].image}"></i>
                                             <a href="details.html?id=${bookmarks[i].id}">
                                                 <h3 class="m-0">${bookmarks[i].title}</h3>
-                                                <div class="card-text h3">${bookmarks[i].price} kr</div>
+                                                <div class="card-text h3">${bookmarks[i].price} NOK</div>
                                             </a>     
                                         </div>
                                     </div>

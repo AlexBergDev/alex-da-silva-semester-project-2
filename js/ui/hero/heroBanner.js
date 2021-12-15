@@ -7,6 +7,7 @@ const container = document.querySelector("h1");
 // I have done some minimal changes to fit my own project.
 // Original codepen: https://codepen.io/danielgroen/embed/VeRPOq?height=265&theme-id=1&slug-hash=VeRPOq&default-tab=js%2Cresult&user=danielgroen&embed-version=2&name=cp_embed_5#result-box
 
+export default function heroBanner() {
 document.addEventListener('DOMContentLoaded',function(event){
     
     function effect(text, i, fnCallback) {
@@ -39,3 +40,4 @@ document.addEventListener('DOMContentLoaded',function(event){
 
     animation(0);
   });
+}

@@ -1,6 +1,7 @@
 import navigation from "./components/navigation.js";
 import footer from "./components/footer.js";
 import displayMessage from "./components/displayMessage.js";
+import heroBanner from "./ui/hero/heroBanner.js";
 import { baseUrl } from "./settings/api.js";
 import renderProducts from "./ui/products/renderProducts.js";
 
@@ -10,6 +11,7 @@ const homeUrl = baseUrl + "/home";
 ( function() {
     navigation();
     footer();
+    heroBanner();
 }());
 
 (async function () {

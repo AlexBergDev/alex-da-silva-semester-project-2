@@ -65,7 +65,7 @@ const url = baseUrl + "/products?featured=true";
         image.innerHTML = `<img src="${baseUrl + product.image.url}" class="img-fluid" alt="${product.title}">`;
         breadcrumb.innerHTML = `${product.title}`;
         description.innerHTML = `${product.description}`;
-        price.innerHTML = `${product.price} kr`;
+        price.innerHTML = `${product.price} NOK`;
         wishlist.innerHTML = `<i class="${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>`;
         addToCart.innerHTML = `<div class="cart-button btn ${cartClass} text-white px-5 shadow rounded" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"><i class="fas fa-shopping-bag"></i></div>`;
 
