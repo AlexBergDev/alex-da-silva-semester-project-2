@@ -62,12 +62,12 @@ const url = baseUrl + "/products?featured=true";
 
         document.title = `Arctic Fashion | ${product.title}`;
         h2.innerHTML = `${product.title}`;
-        image.innerHTML = `<img src="${baseUrl + product.image.url}" class="img-fluid" alt="${product.title}">`;
+        image.innerHTML = `<img src="${product.image_url}" class="img-fluid" alt="${product.title}">`;
         breadcrumb.innerHTML = `${product.title}`;
         description.innerHTML = `${product.description}`;
         price.innerHTML = `${product.price} NOK`;
-        wishlist.innerHTML = `<i class="${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>`;
-        addToCart.innerHTML = `<div class="cart-button btn ${cartClass} text-white px-5 shadow rounded" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"><i class="fas fa-shopping-bag"></i></div>`;
+        wishlist.innerHTML = `<i class="${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${product.image_url}"></i>`;
+        addToCart.innerHTML = `<div class="cart-button btn ${cartClass} text-white px-5 shadow rounded" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${product.image_url}"><i class="fas fa-shopping-bag"></i></div>`;
 
         const bookmarkButton = document.querySelectorAll(".product-container_wishlist i");
         const cartButton = document.querySelectorAll(".card-button .cart-button");
