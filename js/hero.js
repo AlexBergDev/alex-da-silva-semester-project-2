@@ -26,6 +26,7 @@ const message = document.querySelector(".message-container");
         const details = await response.json();
 
         altText.value = details.hero_banner_alt_text;
+        image_url.value = details.hero_banner_image_url;
 
     } catch (error) {
         console.log(error);
@@ -40,17 +41,18 @@ function submitForm(event) {
     message.innerHTML = "";
 
     const altTextValue = altText.value.trim();
+    const imageUrlValue = image_url.value.trim();
 
-    if (altTextValue.length === 0 ) {
+    if (altTextValue.length === 0 || imageUrlValue.length === 0) {
         return displayMessage("alert-warning", EMPTY_INPUT_VALUE, ".message-container");
     }
 
-    updateHero(altTextValue);
+    updateHero(altTextValue, imageUrlValue);
 }
 
-async function updateHero(altText) {
+async function updateHero(altText, image_url) {
     const url = baseUrl + "/home";
-    const data = JSON.stringify({ hero_banner_alt_text: altText});
+    const data = JSON.stringify({ hero_banner_alt_text: altText, hero_banner_image_url: image_url});
 
     const options = {
         method: "PUT",

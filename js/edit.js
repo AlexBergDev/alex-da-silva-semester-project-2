@@ -31,6 +31,7 @@ const price = document.querySelector("#product-price");
 const featured = document.querySelector("#product-featured");
 const image_url = document.querySelector("#product-image_url");
 const message = document.querySelector(".message-container");
+const productPreview = document.querySelector(".product-preview");
 
 (async function () {
     try {
@@ -49,6 +50,27 @@ const message = document.querySelector(".message-container");
           } else {
             featured.checked = false;
           }
+
+          productPreview.innerHTML = "";
+
+          productPreview.innerHTML += `<label class="col-form-label">Product Preview</label>
+
+                                        <div class="col mt-2 mb-4">
+                                            <div class="card shadow-sm rounded">
+                                                <div class="placeholder-glow">
+                                                <img src="${image_url.value}" class="card-img-top rounded-top">
+                                                </div>
+                                                <div class="card-body p-1">
+                                                    <i class="card-icon float-end far fa-heart"></i>
+                                                    <h3 class="m-0">
+                                                    ${title.value}
+                                                    </h3>
+                                                    <p class="card-text h3 m-0">
+                                                    ${price.value} NOK
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </div>`;
 
         deleteButton(details.id);
     } catch (error) {
