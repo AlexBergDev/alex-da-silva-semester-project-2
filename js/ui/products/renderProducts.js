@@ -29,9 +29,9 @@ export default function renderProducts(json, container) {
 
         container.innerHTML += `<div class="col">
                                     <div class="card bg-light shadow-sm rounded">
-                                    <a href="details.html?id=${product.id}"><img src="${baseUrl + product.image.url}" class="card-img-top rounded-top" alt="${product.title}"></a>
+                                    <a href="details.html?id=${product.id}"><img src="${product.image_url}" class="card-img-top rounded-top" alt="${product.title}"></a>
                                         <div class="card-body p-1">
-                                            <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${baseUrl + product.image.url}"></i>
+                                            <i class="card-icon float-end ${bookmarkClass} fa-heart" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-image="${product.image_url}"></i>
                                             <a href="details.html?id=${product.id}">
                                                 <h3 class="m-0">${product.title}</h3>
                                                 <div class="card-text h3">${product.price} NOK</div>
