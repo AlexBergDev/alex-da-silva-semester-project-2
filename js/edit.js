@@ -1,5 +1,5 @@
 import redirectUnauthorized from "./components/auth/redirectUnauthorized.js";
-import navigation from "./components/navigation.js";
+import navigation from "./components/admin/navigation.js";
 import displayMessage from "./components/displayMessage.js";
 import { EMPTY_INPUT_VALUE, SAVED_SUCCESS } from "./constants/messages.js"
 import { baseUrl } from "./settings/api.js";

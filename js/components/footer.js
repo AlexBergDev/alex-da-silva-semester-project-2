@@ -11,7 +11,7 @@ export default function footer() {
 
     if (username) {
         authLink = `<div class="col-6">
-                        <a class="btn btn-outline-dark" href="dashboard.html">Admin</a>
+                        <a class="btn btn-outline-dark" href="admin/dashboard.html">Admin</a>
                     </div>`;
     }
 

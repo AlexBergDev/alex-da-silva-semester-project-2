@@ -10933,6 +10933,14 @@ small, .small {
 .btn {
   border-radius: 5;
   padding: 7px 9px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 1000px) {
@@ -11079,10 +11087,6 @@ small, .small {
 .navigation__icons i:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-}
-
-.navbar-brand img {
-  max-height: 30px;
 }
 
 footer {

@@ -35,7 +35,7 @@ const homeUrl = baseUrl + "/home";
         const home = await response.json();
         
         document.getElementById("jumbotron").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(${baseUrl + home.hero_banner.url})`;
-
+        
     } catch (error) {
         displayMessage("alert-danger", error, "jumbotron");
     }

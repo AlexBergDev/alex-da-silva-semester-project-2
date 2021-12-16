@@ -13,7 +13,7 @@ const message = document.querySelector(".message-container");
 const token = getToken();
 
 if (token) {
-    location.href = "/dashboard.html";
+    location.href = "/admin/dashboard.html";
 }
 
 navigation();
@@ -59,7 +59,7 @@ async function executeLogin(username, password) {
             saveUser(json.user);
 
            
-           location.href = "/dashboard.html";
+           location.href = "/admin/dashboard.html";
         }
 
         if (json.error) {

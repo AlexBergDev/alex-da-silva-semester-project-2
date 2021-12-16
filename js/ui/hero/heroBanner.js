@@ -1,5 +1,4 @@
 const messages = [ "Arctic Fashion.", "Most elegant clothing.", "Up to 40% on outlet items.", "Order your next outfit now."];
-
 const container = document.querySelector("h1");
 
 // ATTENTION: I am not the creator of the original code.

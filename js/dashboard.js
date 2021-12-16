@@ -1,5 +1,5 @@
 import redirectUnauthorized from "./components/auth/redirectUnauthorized.js";
-import navigation from "./components/navigation.js";
+import navigation from "./components/admin/navigation.js";
 import logoutButton from "./components/auth/logoutButton.js";
 import dashboardMessage from "./ui/dashboardMessage.js";
 import { baseUrl } from "./settings/api.js";
@@ -30,8 +30,14 @@ const productUrl = baseUrl + "/products";
             container.innerHTML += `<tr>
                                         <th scope="row">${product.id}</th>
                                         <td>${product.title}</td>
-                                        <td>${product.price} kr</td>
-                                        <td><a href="edit.html?id=${product.id}"><i class="fs-6 fas fa-pen"></i></a></td>
+                                        <td>${product.price}</td>
+                                        <td>
+                                            <a href="edit.html?id=${product.id}">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                                </svg>
+                                            </a>
+                                        </td>
                                     </tr>`;
         });
 

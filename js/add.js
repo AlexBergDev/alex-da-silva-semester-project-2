@@ -1,5 +1,5 @@
 import { EMPTY_INPUT_VALUE, PRODUCT_PUBLISHED, STANDARD_ERROR } from "./constants/messages.js"
-import navigation from "./components/navigation.js";
+import navigation from "./components/admin/navigation.js";
 import redirectUnauthorized from "./components/auth/redirectUnauthorized.js";
 import displayMessage from "./components/displayMessage.js";
 import { baseUrl } from "./settings/api.js";
