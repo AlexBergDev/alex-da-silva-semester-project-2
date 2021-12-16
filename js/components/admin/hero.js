@@ -1,10 +1,10 @@
-import redirectUnauthorized from "./components/auth/redirectUnauthorized.js";
-import navigation from "./components/admin/navigation.js";
-import displayMessage from "./components/displayMessage.js";
-import { EMPTY_INPUT_VALUE, SAVED_SUCCESS } from "./constants/messages.js"
-import { baseUrl } from "./settings/api.js";
+import redirectUnauthorized from "../auth/redirectUnauthorized.js";
+import navigation from "./navigation.js";
+import displayMessage from "../displayMessage.js";
+import { EMPTY_INPUT_VALUE, SAVED_SUCCESS } from "../../constants/messages.js"
+import { baseUrl } from "../../settings/api.js";
 
-import { getToken } from "./utils/storage.js";
+import { getToken } from "../../utils/storage.js";
 
 const token = getToken();
 

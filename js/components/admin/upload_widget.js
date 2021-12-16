@@ -15,7 +15,7 @@ var myWidget = cloudinary.createUploadWidget({
 
                                 <label class="col-form-label">Product Preview</label>
 
-                                <div class="col mt-2 mb-4">
+                                <div class="col mt-2 mb-5">
                                     <div class="card shadow-sm rounded">
                                       <div class="placeholder-glow">
                                         <img src="${result.info.secure_url}" class="card-img-top rounded-top">

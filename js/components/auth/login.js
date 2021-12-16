@@ -1,9 +1,9 @@
-import navigation from "./components/navigation.js";
-import displayMessage from "./components/displayMessage.js";
-import { INVALID_LOGIN_VALUE, WRONG_LOGIN_VALUE } from "./constants/messages.js"
-import { getToken } from "./utils/storage.js";
-import { saveToken, saveUser } from "./utils/storage.js";
-import { baseUrl } from "./settings/api.js";
+import navigation from "../navigation.js";
+import displayMessage from "../displayMessage.js";
+import { INVALID_LOGIN_VALUE, WRONG_LOGIN_VALUE } from "../../constants/messages.js"
+import { getToken } from "../../utils/storage.js";
+import { saveToken, saveUser } from "../../utils/storage.js";
+import { baseUrl } from "../../settings/api.js";
 
 const form = document.querySelector(".login__form");
 const username = document.querySelector("#username");

@@ -1,10 +1,10 @@
-import redirectUnauthorized from "./components/auth/redirectUnauthorized.js";
-import navigation from "./components/admin/navigation.js";
-import logoutButton from "./components/auth/logoutButton.js";
-import dashboardMessage from "./ui/dashboardMessage.js";
-import { baseUrl } from "./settings/api.js";
+import redirectUnauthorized from "../auth/redirectUnauthorized.js";
+import navigation from "./navigation.js";
+import logoutButton from "../auth/logoutButton.js";
+import dashboardMessage from "../../ui/dashboardMessage.js";
+import { baseUrl } from "../../settings/api.js";
 
-import displayMessage from "./components/displayMessage.js";
+import displayMessage from "../displayMessage.js";
 
 ( function() {
     logoutButton();

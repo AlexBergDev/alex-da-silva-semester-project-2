@@ -10960,6 +10960,10 @@ small, .small {
   width: 35px;
 }
 
+.cloudinary-button {
+  background-color: #111111 !important;
+}
+
 .card {
   border-radius: 0;
   border: 0;
