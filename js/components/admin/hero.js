@@ -3,22 +3,24 @@ import navigation from "./navigation.js";
 import displayMessage from "../displayMessage.js";
 import { EMPTY_INPUT_VALUE, SAVED_SUCCESS } from "../../constants/messages.js"
 import { baseUrl } from "../../settings/api.js";
-
 import { getToken } from "../../utils/storage.js";
+import uploadWidget from "./uploadWidget.js";
 
 const token = getToken();
 
 ( function() {
     redirectUnauthorized();
     navigation();
+    uploadWidget();
 }());
 
 const homeUrl = baseUrl + "/home";
 
 const form = document.querySelector("form");
 const altText = document.querySelector("#hero-alt");
-const image_url = document.querySelector("#hero-image_url");
+let image_url = document.querySelector("#product-image_url");
 const message = document.querySelector(".message-container");
+const ImageContainer = document.querySelector(".image-container");
 
 (async function () {
     try {
@@ -27,6 +29,9 @@ const message = document.querySelector(".message-container");
 
         altText.value = details.hero_banner_alt_text;
         image_url.value = details.hero_banner_image_url;
+
+        ImageContainer.innerHTML = "";
+        ImageContainer.innerHTML += `<img src="${image_url.value}" class="card-img-top rounded">`;
 
     } catch (error) {
         console.log(error);
@@ -39,6 +44,8 @@ function submitForm(event) {
     event.preventDefault();
 
     message.innerHTML = "";
+
+    const image_url = document.querySelector("#product-image_url");
 
     const altTextValue = altText.value.trim();
     const imageUrlValue = image_url.value.trim();

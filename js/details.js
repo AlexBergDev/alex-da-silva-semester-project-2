@@ -62,7 +62,7 @@ const url = baseUrl + "/products?featured=true";
 
         document.title = `Arctic Fashion | ${product.title}`;
         h2.innerHTML = `${product.title}`;
-        image.innerHTML = `<img src="${product.image_url}" class="img-fluid" alt="${product.title}">`;
+        image.innerHTML = `<img src="${product.image_url}" class="img-fluid rounded" alt="${product.title}">`;
         breadcrumb.innerHTML = `${product.title}`;
         description.innerHTML = `${product.description}`;
         price.innerHTML = `${product.price} NOK`;

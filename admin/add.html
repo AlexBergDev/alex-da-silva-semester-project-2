@@ -25,10 +25,8 @@
                         <form class="border-grey rounded p-4">
 
                             <div class="mb-4 d-grid gap-2 d-flex">
-                                <a href="dashboard.html" class="btn btn-outline-dark"><i class="fas fa-arrow-left me-2"></i>Go Back</a>
+                                <a href="dashboard.html" class="btn btn-outline-dark"><i class="fas fa-arrow-left me-2"></i>Dashboard</a>
                               </div>
-
-                            <div class="message-container"></div>
 
                             <div class="mb-3">
                                 <label class="col-sm-2 col-form-label" for="product-featured">Featured</label>
@@ -54,10 +52,36 @@
 
                             <div class="mb-4">
                                 <label for="product-image_url" class="sr-only">Image URL</label>
-                                <input id="product-image_url" class="form-control form-control--border" placeholder="Image URL">
+                                <div class="url-container">
+                                    <input id="product-image_url" class="form-control form-control--border" placeholder="Image URL">
+                                </div>
                             </div>
 
-                            <button class="btn btn-success text-white shadow d-grid gap-2 col-12 col-md-4 mx-auto mb-2">Publish</button>
+                            <div class="text-center">
+                                <button type="button" id="upload_widget" class="cloudinary-button btn text-white shadow col-12 col-md-6 mx-auto mb-2">Upload image
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ms-1" height="22" fill="none" viewBox="0 0 24 24" stroke="white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="product-preview col-12 col-md-8 col-lg-6 mx-auto">
+
+                                <label class="col-form-label">Image Preview</label>
+
+                                <div class="col mt-2 mb-4">
+                                    <div class="card shadow-sm rounded">
+                                        <div class="image-container">
+                                            <div class="card-img-top placeholder products__placeholder rounded-top"></div>
+                                          </div>
+                                    </div>
+                                  </div>
+
+                            </div>
+
+                            <div class="message-container"></div>
+
+                            <button class="btn btn-success text-white shadow d-grid gap-2 col-12 col-md-4 mx-auto my-2">Publish</button>
 
                         </form>
 
@@ -71,6 +95,7 @@
             </div>
         </footer>
 
+        <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
         <script src="../js/components/admin/add.js" type="module"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

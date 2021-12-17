@@ -5,6 +5,7 @@ import { EMPTY_INPUT_VALUE, SAVED_SUCCESS } from "../../constants/messages.js"
 import { baseUrl } from "../../settings/api.js";
 import { getToken } from "../../utils/storage.js";
 import deleteButton from "./deleteButton.js";
+import uploadWidget from "./uploadWidget.js";
 
 const token = getToken();
 
@@ -29,7 +30,7 @@ const title = document.querySelector("#product-title");
 const description = document.querySelector("#product-description");
 const price = document.querySelector("#product-price");
 const featured = document.querySelector("#product-featured");
-const image_url = document.querySelector("#product-image_url");
+let image_url = document.querySelector("#product-image_url");
 const message = document.querySelector(".message-container");
 const productPreview = document.querySelector(".product-preview");
 
@@ -53,24 +54,15 @@ const productPreview = document.querySelector(".product-preview");
 
           productPreview.innerHTML = "";
 
-          productPreview.innerHTML += `<label class="col-form-label">Product Preview</label>
+          productPreview.innerHTML += `<label class="col-form-label">Image Preview</label>
 
                                         <div class="col mt-2 mb-4">
                                             <div class="card shadow-sm rounded">
-                                                <div class="placeholder-glow">
-                                                <img src="${image_url.value}" class="card-img-top rounded-top">
-                                                </div>
-                                                <div class="card-body p-1">
-                                                    <i class="card-icon float-end far fa-heart"></i>
-                                                    <h3 class="m-0">
-                                                    ${title.value}
-                                                    </h3>
-                                                    <p class="card-text h3 m-0">
-                                                    ${price.value} NOK
-                                                    </p>
+                                                <div class="image-container">
+                                                    <img src="${image_url.value}" class="card-img-top rounded">
                                                 </div>
                                             </div>
-                                            </div>`;
+                                        </div>`;
 
         deleteButton(details.id);
     } catch (error) {
@@ -78,10 +70,14 @@ const productPreview = document.querySelector(".product-preview");
     }
 })();
 
+uploadWidget();
+
 form.addEventListener("submit", submitForm);
 
 function submitForm(event) {
     event.preventDefault();
+
+    const image_url = document.querySelector("#product-image_url");
 
     message.innerHTML = "";
 

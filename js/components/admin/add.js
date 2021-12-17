@@ -4,12 +4,14 @@ import redirectUnauthorized from "../auth/redirectUnauthorized.js";
 import displayMessage from "../displayMessage.js";
 import { baseUrl } from "../../settings/api.js";
 import { getToken } from "../../utils/storage.js";
+import uploadWidget from "./uploadWidget.js";
 
 const token = getToken();
 
 ( function() {
     redirectUnauthorized();
     navigation();
+    uploadWidget();
 }());
 
 const form = document.querySelector("form");
@@ -17,7 +19,6 @@ const title = document.querySelector("#product-title");
 const description = document.querySelector("#product-description");
 const price = document.querySelector("#product-price");
 const featured = document.querySelector("#product-featured");
-const image_url = document.querySelector("#product-image_url");
 const message = document.querySelector(".message-container");
 
 form.addEventListener("submit", submitForm);
@@ -26,6 +27,8 @@ function submitForm(event) {
     event.preventDefault();
 
     message.innerHTML = "";
+
+    const image_url = document.querySelector("#product-image_url");
 
     if (featured.checked == true){
         featured.value = "true";
