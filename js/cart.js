@@ -14,6 +14,7 @@ import cartClick from "./components/cart/cartClick.js";
 export default function renderCart() {
     const container = document.querySelector(".cart-container");
     const checkoutContainer = document.querySelector(".checkout-container");
+    const totalContainer = document.querySelector(".total-container");
 
     const insideCart = getCart();
 
@@ -44,6 +45,11 @@ export default function renderCart() {
         checkoutContainer.innerHTML += `<p class="m-0 float-end">1x</p>
                                         <p class="m-0">${insideCart[i].title}</p>
                                         <p>${insideCart[i].price} NOK</p>`;
+        let total = 0;
+        total += parseInt(insideCart[i].price);
+
+        totalContainer.innerHTML = `<h5>Total: ${total} NOK</h5>
+                                    <a href="#" class="btn btn-primary shadow">Checkout</a>`;
 
         const cartButton = document.querySelectorAll(".card i");
 
