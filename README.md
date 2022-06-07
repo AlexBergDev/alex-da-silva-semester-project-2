@@ -1,6 +1,6 @@
 # Arctic Fashion
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![Arctic Fashion preview](https://github.com/AlexBergDev/alexdev-frontend/blob/main/public/assets/images/portfolio/arctic-fashion-preview.jpg)
 
 A fictional modern urban fashion online outlet for young women.
 
